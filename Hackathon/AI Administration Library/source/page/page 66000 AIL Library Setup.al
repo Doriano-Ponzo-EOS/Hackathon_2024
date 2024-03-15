@@ -41,6 +41,33 @@ page 66000 "AIL Library Setup"
                 }
             }
         }
+
+    }
+    actions
+    {
+        area(Processing)
+        {
+            action(TestCall)
+            {
+                ApplicationArea = All;
+                Image = ChangeTo;
+                ToolTip = 'Test API Call';
+
+                trigger OnAction()
+                var
+                    AILAPICall: Codeunit "AIL SendRequest";
+                    TopIntent: Enum "AIL Intent";
+                    TempAILEntities: Record "AIL Entities" temporary;
+                begin
+                    AILAPICall.SendLSRequest('Porta in stato chiuso ordine 15000', TopIntent, TempAILEntities);
+                    Message('%1');
+                    TempAILEntities.FindSet();
+                    repeat
+                        Message('%1 - %2', TempAILEntities."Entity", TempAILEntities.Text);
+                    until TempAILEntities.Next() = 0;
+                end;
+            }
+        }
     }
 
     trigger OnOpenPage()
@@ -51,4 +78,6 @@ page 66000 "AIL Library Setup"
             Rec.Insert();
         end;
     end;
+
+
 }

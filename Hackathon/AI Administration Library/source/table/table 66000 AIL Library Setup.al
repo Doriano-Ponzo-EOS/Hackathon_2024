@@ -13,7 +13,7 @@ table 66000 "AIL Library Setup"
         {
             Caption = 'AIL Endpoint';
         }
-        field(3; "SubscriptionKey"; Guid)
+        field(3; "SubscriptionKey"; Text[250])
         {
             Caption = 'Subscription Key';
         }
@@ -25,7 +25,7 @@ table 66000 "AIL Library Setup"
         {
             Caption = 'Project Name';
         }
-        field(6; "Deployment Name"; Guid)
+        field(6; "Deployment Name"; Text[250])
         {
             Caption = 'Deployment Name';
         }

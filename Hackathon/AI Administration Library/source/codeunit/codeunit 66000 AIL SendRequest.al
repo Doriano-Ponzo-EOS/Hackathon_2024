@@ -47,7 +47,7 @@ codeunit 66000 "AIL SendRequest"
         RequestMessage.GetHeaders(RequestHeader);
         RequestHeader.Add('Ocp-Apim-Subscription-Key', AILSetup.SubscriptionKey);
 
-        RequestMessage.SetRequestUri(StrSubstNo(AILSetup."AIL Endpoint", AILSetup."API Version"));
+        RequestMessage.SetRequestUri(StrSubstNo(URILbl, AILSetup."AIL Endpoint", AILSetup."API Version"));
         RequestMessage.Method('POST');
 
         Content.WriteFrom(JsonData);
@@ -89,16 +89,17 @@ codeunit 66000 "AIL SendRequest"
         TopIntentTxt: Text;
         JArray: JsonArray;
         jEntityTok: JsonToken;
-
+        Intents: List of [Text];
     begin
         JObj.ReadFrom(ResponseTxt);
         JObj.Get('result', JTok);
         JTok.SelectToken('$.result.prediction.topIntent', JTopIntent);
-        JTok.SelectToken('$.result.prediction.topIntent', JEntities);
+        JTok.SelectToken('$.result.prediction.entities', JEntities);
 
         TopIntentTxt := JTopIntent.AsValue().AsText();
-        JArray := JEntities.AsArray();
+        TopIntent := Enum::"AIL Intent".FromInteger("AIL Intent".Ordinals.Get("AIL Intent".Names.IndexOf(TopIntentTxt)));
 
+        JArray := JEntities.AsArray();
         foreach jEntityTok in JArray do begin
             tmp_entities.Init();
             jEntityTok.AsObject().Get('category', JTok);
