@@ -2,7 +2,103 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AI for EDS">
     <body>
-      <group id="body" />
+      <group id="body">
+        <trans-unit id="Table 1430685156 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 1431358970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EDS Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field EDS Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 2004648782 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New EDS Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field New EDS Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 3117446396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Select - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 3076185996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field System ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest EDS changes with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - NamedType 1196336482" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest EDS changes with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - NamedType Text001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Action 2626368477 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate EDS proposal with Dynamics 365 Copilot.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Generate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Action 2626368477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Generate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Action 2079045816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action OK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Action 2388911040 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Regenerate EDS proposal with Dynamics 365 Copilot.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Regenerate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - Action 2388911040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Regenerate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Regenerate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2543418552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EDS Proposal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal Sub - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2543418552 - Control 413864260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal Sub - Control EDSDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3039624089 - Action 3041658326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Suggest EDS with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AIL PageExt66100 - Action AILSuggestEDSwithCopilot - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3677320706 - Action 3041658326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Suggest EDS with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AIL PageExt66101 - Action AILSuggestEDSwithCopilot - Property Caption</note>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>
