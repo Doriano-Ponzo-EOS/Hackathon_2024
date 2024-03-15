@@ -3,6 +3,21 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AI Administration Library">
     <body>
       <group id="body">
+        <trans-unit id="Table 935861405 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intent Selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Intent Selection Temporary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 935861405 - Field 2812679574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intent Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Intent Selection Temporary - Field Intent Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 935861405 - Field 1814968387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intent ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Intent Selection Temporary - Field Intent ID - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2476498112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AI Library Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -13,6 +28,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field Primary Key - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1912312219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Utterance Worksheet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Utterance Worksheet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1912312219 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Utterance Worksheet - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1912312219 - Field 1787696736 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Utterance Worksheet - Field Intent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1912312219 - Field 1261348325 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Utterance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Utterance Worksheet - Field Utterance - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2476498112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AI Library Setup (AIL)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -22,6 +57,21 @@
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1912312219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Utterance Worksheet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Utterance Worksheet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1912312219 - Control 3910103502 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Utterance Worksheet - Control SessionIntent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1912312219 - Action 209589697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest with AI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Utterance Worksheet - Action SuggestUtterance - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3542221276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Intents</source>
