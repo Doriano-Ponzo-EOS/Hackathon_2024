@@ -16,6 +16,12 @@
       "name": "Close Documents Without Invoicing",
       "publisher": "EOS Solutions",
       "version": "23.0.0.0"
+    },
+    {
+      "id": "fe52e885-270f-4366-9542-a7bfb709e228",
+      "name": "AI Administration Library",
+      "publisher": "EOS Solutions",
+      "version": "23.0.0.0"
     }
   ],
   "screenshots": [],
@@ -23,8 +29,8 @@
   "application": "23.0.0.0",
   "idRanges": [
     {
-      "from": 66100,
-      "to": 66149
+      "from": 66150,
+      "to": 66199
     }
   ],
   "features": [
@@ -35,5 +41,6 @@
     "allowDebugging": true,
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
-  }
+  },
+  "runtime": "12.1"
 }

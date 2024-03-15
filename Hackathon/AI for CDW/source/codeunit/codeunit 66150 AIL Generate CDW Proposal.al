@@ -1,8 +1,8 @@
-codeunit 66100 "AIL Generate EDS Proposal"
+codeunit 66150 "AIL Generate CDW Proposal"
 {
     trigger OnRun()
     begin
-        GenerateEDSProposal();
+        GenerateCDWProposal();
     end;
 
     procedure SetUserPrompt(InputUserPrompt: Text)
@@ -10,19 +10,18 @@ codeunit 66100 "AIL Generate EDS Proposal"
         UserPrompt := InputUserPrompt;
     end;
 
-    procedure SetEDSKey(TableID2: Integer; DocumentType2: Integer)
+    procedure SetCDWKey(TableID2: Integer)
     begin
         TableID := TableID2;
-        DocumentType := DocumentType2;
     end;
 
-    procedure GetResult(var TmpEDSAIProposal2: Record "AIL Copilot EDS Proposal" temporary; var Intent2: Enum "AIL Intent")
+    procedure GetResult(var TmpCDWAIProposal2: Record "AIL Copilot CDW Proposal" temporary; var Intent2: Enum "AIL Intent")
     begin
-        TmpEDSAIProposal2.Copy(TmpEDSAIProposal, true);
+        TmpCDWAIProposal2.Copy(TmpCDWAIProposal, true);
         Intent2 := Intent;
     end;
 
-    local procedure GenerateEDSProposal()
+    local procedure GenerateCDWProposal()
     var
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
@@ -43,42 +42,36 @@ codeunit 66100 "AIL Generate EDS Proposal"
         TmpXmlBuffer.LoadFromStream(InStr);*/
 
         Clear(OutStr);
-        Intent := Intent::"EDSChange";
+        Intent := Intent::CDWPrepare;
 
         case TableID of
             Database::"Sales Header":
                 begin
                     SalesHeader.Reset();
                     SalesHeader.SetRange("Document Type", DocumentType);
-                    SalesHeader.SetFilter("EOS DS Status Code", '<>%1', '');
                     //TODO filter from AI
                     if SalesHeader.FindSet() then
                         repeat
-                            TmpEDSAIProposal.Init();
-                            TmpEDSAIProposal."Table ID" := TableID;
-                            TmpEDSAIProposal."System ID" := SalesHeader.SystemId;
-                            TmpEDSAIProposal.Code := SalesHeader."No.";
-                            TmpEDSAIProposal.Description := SalesHeader."Sell-to Customer Name";
-                            TmpEDSAIProposal."EDS Status" := SalesHeader."EOS DS Status Code";
-                            TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
-                            TmpEDSAIProposal.Insert();
+                            TmpCDWAIProposal.Init();
+                            TmpCDWAIProposal."Table ID" := TableID;
+                            TmpCDWAIProposal."System ID" := SalesHeader.SystemId;
+                            TmpCDWAIProposal.Code := SalesHeader."No.";
+                            TmpCDWAIProposal.Description := SalesHeader."Sell-to Customer Name";
+                            TmpCDWAIProposal.Insert();
                         until SalesHeader.Next() = 0;
                 end;
             Database::Customer:
                 begin
                     Customer.Reset();
-                    Customer.SetFilter("EOS DS Status Code", '<>%1', '');
                     //TODO filter from AI
                     if Customer.FindSet() then
                         repeat
-                            TmpEDSAIProposal.Init();
-                            TmpEDSAIProposal."Table ID" := TableID;
-                            TmpEDSAIProposal."System ID" := Customer.SystemId;
-                            TmpEDSAIProposal.Code := Customer."No.";
-                            TmpEDSAIProposal.Description := Customer.Name;
-                            TmpEDSAIProposal."EDS Status" := Customer."EOS DS Status Code";
-                            TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
-                            TmpEDSAIProposal.Insert();
+                            TmpCDWAIProposal.Init();
+                            TmpCDWAIProposal."Table ID" := TableID;
+                            TmpCDWAIProposal."System ID" := Customer.SystemId;
+                            TmpCDWAIProposal.Code := Customer."No.";
+                            TmpCDWAIProposal.Description := Customer.Name;
+                            TmpCDWAIProposal.Insert();
                         until Customer.Next() = 0;
                 end;
         end;
@@ -91,13 +84,13 @@ codeunit 66100 "AIL Generate EDS Proposal"
         AOAIOperationResponse: Codeunit "AOAI Operation Response";
         AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
         AOAIChatMessages: Codeunit "AOAI Chat Messages";
-        //IsolatedStorageWrapper: Codeunit "Isolated Storage Wrapper";
+        //IsolatCDWtorageWrapper: Codeunit "Isolated Storage Wrapper";
         Result: Text;
         EntityTextModuleInfo: ModuleInfo;
     begin
         // These funtions in the "Azure Open AI" codeunit will be available in Business Central online later this year.
         // You will need to use your own key for Azure OpenAI for all your Copilot features (for both development and production).
-        /*AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions", IsolatedStorageWrapper.GetEndpoint(), IsolatedStorageWrapper.GetDeployment(), IsolatedStorageWrapper.GetSecretKey());
+        /*AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions", IsolatCDWtorageWrapper.GetEndpoint(), IsolatCDWtorageWrapper.GetDeployment(), IsolatCDWtorageWrapper.GetSecretKey());
 
         AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::"Find Item Substitutions");
 
@@ -122,7 +115,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
     end;
 
     var
-        TmpEDSAIProposal: Record "AIL Copilot EDS Proposal" temporary;
+        TmpCDWAIProposal: Record "AIL Copilot CDW Proposal" temporary;
         TableID: Integer;
         DocumentType: Integer;
         UserPrompt: Text;

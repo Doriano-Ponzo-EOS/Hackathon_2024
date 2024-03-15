@@ -39,7 +39,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Table ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1430685156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Suggest EDS changes with Copilot</source>
+          <source>Suggest EDS with Copilot</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Property Caption</note>
         </trans-unit>
@@ -47,6 +47,16 @@
           <source>Suggest EDS changes with Copilot</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - NamedType Text001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - NamedType 1753513791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request table to inspect or propose change status. Example: Close all open sales orders not modified since 3 days</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - NamedType Text002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1430685156 - NamedType 672156893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Something went wrong. Please try again. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - NamedType Text003Err</note>
         </trans-unit>
         <trans-unit id="Page 1430685156 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Discard</source>
@@ -79,7 +89,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Regenerate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2543418552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>EDS Proposal</source>
+          <source>EDS Proposals</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal Sub - Property Caption</note>
         </trans-unit>
