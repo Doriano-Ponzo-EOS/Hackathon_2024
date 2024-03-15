@@ -16,9 +16,10 @@ codeunit 66100 "AIL Generate EDS Proposal"
         DocumentType := DocumentType2;
     end;
 
-    procedure GetResult(var TmpEDSAIProposal2: Record "AIL Copilot EDS Proposal" temporary)
+    procedure GetResult(var TmpEDSAIProposal2: Record "AIL Copilot EDS Proposal" temporary; var Intent2: Enum "AIL Intent")
     begin
         TmpEDSAIProposal2.Copy(TmpEDSAIProposal, true);
+        Intent2 := Intent;
     end;
 
     local procedure GenerateEDSProposal()
@@ -34,7 +35,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
         TmpText: Text;
     begin
         TempBlob.CreateOutStream(OutStr);
-        TmpText := Chat(GetSystemPrompt(), GetFinalUserPrompt(UserPrompt));
+        TmpText := Chat(UserPrompt);
         OutStr.WriteText(TmpText);
         TempBlob.CreateInStream(InStr);
 
@@ -42,6 +43,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
         TmpXmlBuffer.LoadFromStream(InStr);*/
 
         Clear(OutStr);
+        Intent := Intent::EDS_Change;
 
         case TableID of
             Database::"Sales Header":
@@ -57,7 +59,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal."System ID" := SalesHeader.SystemId;
                             TmpEDSAIProposal.Code := SalesHeader."No.";
                             TmpEDSAIProposal.Description := SalesHeader."Sell-to Customer Name";
-                            TmpEDSAIProposal."Old EDS Status" := SalesHeader."EOS DS Status Code";
+                            TmpEDSAIProposal."EDS Status" := SalesHeader."EOS DS Status Code";
                             TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
                             TmpEDSAIProposal.Insert();
                         until SalesHeader.Next() = 0;
@@ -74,7 +76,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal."System ID" := Customer.SystemId;
                             TmpEDSAIProposal.Code := Customer."No.";
                             TmpEDSAIProposal.Description := Customer.Name;
-                            TmpEDSAIProposal."Old EDS Status" := Customer."EOS DS Status Code";
+                            TmpEDSAIProposal."EDS Status" := Customer."EOS DS Status Code";
                             TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
                             TmpEDSAIProposal.Insert();
                         until Customer.Next() = 0;
@@ -82,7 +84,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
         end;
     end;
 
-    procedure Chat(ChatSystemPrompt: Text; ChatUserPrompt: Text): Text
+    procedure Chat(ChatUserPrompt: Text): Text
     var
         AzureOpenAI: Codeunit "Azure OpenAI";
         EnvironmentInformation: Codeunit "Environment Information";
@@ -119,39 +121,10 @@ codeunit 66100 "AIL Generate EDS Proposal"
         exit(Result);
     end;
 
-    local procedure GetFinalUserPrompt(InputUserPrompt: Text) FinalUserPrompt: Text
-    var
-        Item: Record Item;
-        Newline: Char;
-    begin
-        Newline := 10;
-        FinalUserPrompt := 'These are the available items:' + Newline;
-        if Item.FindSet() then
-            repeat
-                FinalUserPrompt +=
-                    'Number: ' + Item."No." + ', ' +
-                    'Description:' + Item.Description + '.' + Newline;
-            until Item.Next() = 0;
-
-        FinalUserPrompt += Newline;
-        FinalUserPrompt += StrSubstNo('The description of the item that needs to be substituted is: %1.', InputUserPrompt);
-    end;
-
-    local procedure GetSystemPrompt() SystemPrompt: Text
-    var
-        Item: Record Item;
-    begin
-        SystemPrompt += 'The user will provide an item description, and a list of other items. Your task is to find items that can substitute that item.';
-        SystemPrompt += 'Try to suggest several relevant items if possible.';
-        SystemPrompt += 'The output should be in xml, containing item number (use number tag), item description (use description tag), and explanation why this item was suggested (use explanation tag).';
-        SystemPrompt += 'Use items as a root level tag, use item as item tag.';
-        SystemPrompt += 'Do not use line breaks or other special characters in explanation.';
-        SystemPrompt += 'Skip empty nodes.';
-    end;
-
     var
         TmpEDSAIProposal: Record "AIL Copilot EDS Proposal" temporary;
         TableID: Integer;
         DocumentType: Integer;
         UserPrompt: Text;
+        Intent: Enum "AIL Intent";
 }

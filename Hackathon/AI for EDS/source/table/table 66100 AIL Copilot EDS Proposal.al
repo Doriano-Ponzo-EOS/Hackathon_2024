@@ -25,9 +25,9 @@ table 66100 "AIL Copilot EDS Proposal"
             Caption = 'Description';
             Editable = false;
         }
-        field(10; "Old EDS Status"; Code[10])
+        field(10; "EDS Status"; Code[10])
         {
-            Caption = 'Old EDS Status';
+            Caption = 'EDS Status';
             Editable = false;
         }
         field(11; "New EDS Status"; Code[10])

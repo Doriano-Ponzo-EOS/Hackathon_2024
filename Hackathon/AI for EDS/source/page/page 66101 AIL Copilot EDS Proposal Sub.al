@@ -4,6 +4,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "AIL Copilot EDS Proposal";
+    Caption = 'EDS Proposal';
 
     layout
     {
@@ -17,8 +18,8 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 field(Select; Rec.Select)
                 {
                     ApplicationArea = All;
+                    Visible = Intent = Intent::EDS_Change;
                 }
-
                 field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
@@ -27,20 +28,21 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 {
                     ApplicationArea = All;
                 }
-                field("Old EDS Status"; Rec."Old EDS Status")
+                field("EDS Status"; Rec."EDS Status")
                 {
                     ApplicationArea = All;
                 }
                 field("New EDS Status"; Rec."New EDS Status")
                 {
                     ApplicationArea = All;
+                    Visible = Intent = Intent::EDS_Change;
                 }
             }
         }
     }
 
 
-    procedure Load(var TmpEDSAIProposal: Record "AIL Copilot EDS Proposal")
+    procedure Load(var TmpEDSAIProposal: Record "AIL Copilot EDS Proposal"; Intent2: Enum "AIL Intent")
     begin
         Rec.Reset();
         Rec.DeleteAll();
@@ -51,6 +53,8 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 Rec.Copy(TmpEDSAIProposal, false);
                 Rec.Insert();
             until TmpEDSAIProposal.Next() = 0;
+
+        Intent := Intent2;
 
         CurrPage.Update(false);
     end;
@@ -69,7 +73,10 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 // Aggiorna stato
                 RecRef.Open(EDSAIProposal2."Table ID");
                 RecRef.GetBySystemId(EDSAIProposal2."System ID");
-                DSMgt.ChangeDirectStatus(RecRef, EDSAIProposal2."Old EDS Status", EDSAIProposal2."New EDS Status", '');
+                DSMgt.ChangeDirectStatus(RecRef, EDSAIProposal2."EDS Status", EDSAIProposal2."New EDS Status", '');
             until EDSAIProposal2.Next() = 0;
     end;
+
+    var
+        Intent: Enum "AIL Intent";
 }

@@ -13,15 +13,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 1431358970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EDS Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field EDS Status - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1430685156 - Field 2004648782 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New EDS Status</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field New EDS Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 2650093211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Old EDS Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Old EDS Status - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1430685156 - Field 3117446396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select</source>
@@ -77,6 +77,11 @@
           <source>Regenerate</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal - Action Regenerate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2543418552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EDS Proposal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot EDS Proposal Sub - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2543418552 - Control 413864260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>

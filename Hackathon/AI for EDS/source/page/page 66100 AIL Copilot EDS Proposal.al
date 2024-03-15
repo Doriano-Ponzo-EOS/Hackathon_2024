@@ -74,6 +74,7 @@ page 66100 "AIL Copilot EDS Proposal"
             systemaction(OK)
             {
                 Caption = 'Confirm';
+                Enabled = Intent = Intent::EDS_Change;
             }
             systemaction(Cancel)
             {
@@ -119,7 +120,7 @@ page 66100 "AIL Copilot EDS Proposal"
         Attempts := 0;
         while TmpEDSAIProposal.IsEmpty and (Attempts < 5) do begin
             if GenEDSProposal.Run() then
-                GenEDSProposal.GetResult(TmpEDSAIProposal);
+                GenEDSProposal.GetResult(TmpEDSAIProposal, Intent);
             Attempts += 1;
         end;
 
@@ -142,13 +143,14 @@ page 66100 "AIL Copilot EDS Proposal"
 
     procedure Load(var TmpEDSProposal: Record "AIL Copilot EDS Proposal" temporary)
     begin
-        CurrPage.SubsProposalSub.Page.Load(TmpEDSProposal);
+        CurrPage.SubsProposalSub.Page.Load(TmpEDSProposal, Intent);
         CurrPage.Update(false);
     end;
 
     var
         TableID: Integer;
         DocumentType: Integer;
+        Intent: Enum "AIL Intent";
         TmpEDSAIProposal: Record "AIL Copilot EDS Proposal" temporary;
         GenEDSProposal: Codeunit "AIL Generate EDS Proposal";
         Text001Lbl: Label 'Suggest EDS changes with Copilot';

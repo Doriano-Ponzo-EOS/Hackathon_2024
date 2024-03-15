@@ -9,7 +9,7 @@
             "server": "http://BC23CU5HACK",
             "serverInstance": "BC",
             "authentication": "UserPassword",
-            "startupObjectId": 9307,
+            "startupObjectId": 9305,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,

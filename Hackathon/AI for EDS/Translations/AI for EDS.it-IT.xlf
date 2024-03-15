@@ -39,6 +39,10 @@
           <source> </source>
           <target> </target>
         </trans-unit>
+        <trans-unit id="Page 2543418552 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>EDS Proposal</source>
+          <target>Proposte EDS</target>
+        </trans-unit>
         <trans-unit id="PageExtension 3039624089 - Action 3041658326 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Suggest EDS with Copilot</source>
           <target>Suggerisci EDS con Copilot</target>
@@ -52,8 +56,8 @@
           <target>Nuovo stato EDS</target>
         </trans-unit>
         <trans-unit id="Table 1430685156 - Field 2650093211 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Old EDS Status</source>
-          <target>Vecchio stato EDS</target>
+          <source>EDS Status</source>
+          <target>Stato EDS</target>
         </trans-unit>
         <trans-unit id="Table 1430685156 - Field 3004954119 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Code</source>

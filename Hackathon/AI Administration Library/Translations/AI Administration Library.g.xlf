@@ -23,6 +23,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control General - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 3542221276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Intents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AIL Intent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3542221276 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AIL Intent - EnumValue   - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>
