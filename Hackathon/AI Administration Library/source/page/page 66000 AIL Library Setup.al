@@ -13,6 +13,32 @@ page 66000 "AIL Library Setup"
             group(General)
             {
                 Caption = 'General';
+
+                field("AIL Endpoint"; Rec."AIL Endpoint")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the AIL Endpoint field.';
+                }
+                field(Subscription; Rec.SubscriptionKey)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Subscription field.';
+                }
+                field("API Version"; Rec."API Version")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the API Version field.';
+                }
+                field("Project Name"; Rec."Project Name")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Project Name field.';
+                }
+                field("Deployment Name"; Rec."Deployment Name")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Deployment Name field.';
+                }
             }
         }
     }
