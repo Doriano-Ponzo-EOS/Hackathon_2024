@@ -2,7 +2,7 @@
   "id": "fe52e885-270f-4366-9542-a7bfb709e228",
   "name": "AI Administration Library",
   "publisher": "EOS Solutions",
-  "version": "1.0.0.0",
+  "version": "23.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -13,7 +13,7 @@
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "22.0.0.0",
+  "application": "23.0.0.0",
   "idRanges": [
     {
       "from": 66000,

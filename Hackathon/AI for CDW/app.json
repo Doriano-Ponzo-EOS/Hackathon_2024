@@ -2,7 +2,7 @@
   "id": "5eac8b98-5a7a-4cb9-9751-84a99b7a7564",
   "name": "AI for CDW",
   "publisher": "EOS Solutions",
-  "version": "1.0.0.0",
+  "version": "23.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -10,10 +10,17 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "46acfe78-03ea-46d7-8d56-1e8c74b5c682",
+      "name": "Close Documents Without Invoicing",
+      "publisher": "EOS Solutions",
+      "version": "23.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "22.0.0.0",
+  "application": "23.0.0.0",
   "idRanges": [
     {
       "from": 66100,
@@ -21,7 +28,8 @@
     }
   ],
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,

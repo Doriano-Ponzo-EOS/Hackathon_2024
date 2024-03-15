@@ -1,0 +1,16 @@
+﻿{
+  "Languages": [
+    {
+      "Language": "en-US",
+      "LinkToLanguage": null,
+      "Enabled": true,
+      "Hidden": false
+    },
+    {
+      "Language": "it-IT",
+      "LinkToLanguage": null,
+      "Enabled": true,
+      "Hidden": false
+    }
+  ]
+}
