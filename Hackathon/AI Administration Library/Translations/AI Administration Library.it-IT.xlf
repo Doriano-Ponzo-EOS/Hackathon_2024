@@ -3,6 +3,22 @@
   <file datatype="xml" source-language="en-US" target-language="it-IT">
     <body>
       <group id="body">
+        <trans-unit id="Enum 3542221276 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intents</source>
+          <target>Intents</target>
+        </trans-unit>
+        <trans-unit id="Page 1912312219 - Action 209589697 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest with AI</source>
+          <target>Suggerisci con AI</target>
+        </trans-unit>
+        <trans-unit id="Page 1912312219 - Control 3910103502 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intent</source>
+          <target>Intent</target>
+        </trans-unit>
+        <trans-unit id="Page 1912312219 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Utterance Worksheet</source>
+          <target>Utterance Worksheet</target>
+        </trans-unit>
         <trans-unit id="Page 2476498112 - Control 2445482498 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>General</source>
           <target>Generale</target>
@@ -11,6 +27,22 @@
           <source>AI Library Setup (AIL)</source>
           <target>Setup AI Library (AIL)</target>
         </trans-unit>
+        <trans-unit id="Table 1912312219 - Field 1261348325 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Utterance</source>
+          <target>Utterance</target>
+        </trans-unit>
+        <trans-unit id="Table 1912312219 - Field 1787696736 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intent</source>
+          <target>Intent</target>
+        </trans-unit>
+        <trans-unit id="Table 1912312219 - Field 883711285 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Nr. movimento</target>
+        </trans-unit>
+        <trans-unit id="Table 1912312219 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Utterance Worksheet</source>
+          <target>Utterance Worksheet</target>
+        </trans-unit>
         <trans-unit id="Table 2476498112 - Field 1663593181 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Primary Key</source>
           <target>Chiave primaria</target>
@@ -18,6 +50,18 @@
         <trans-unit id="Table 2476498112 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>AI Library Setup</source>
           <target>Setup AI Library</target>
+        </trans-unit>
+        <trans-unit id="Table 935861405 - Field 1814968387 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intent ID</source>
+          <target>ID intent</target>
+        </trans-unit>
+        <trans-unit id="Table 935861405 - Field 2812679574 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intent Description</source>
+          <target>Descrizione intent</target>
+        </trans-unit>
+        <trans-unit id="Table 935861405 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intent Selection</source>
+          <target>Selezione intent</target>
         </trans-unit>
       </group>
     </body>
