@@ -16,6 +16,12 @@
       "name": "Data Security",
       "publisher": "EOS Solutions",
       "version": "23.0.0.0"
+    },
+    {
+      "id": "fe52e885-270f-4366-9542-a7bfb709e228",
+      "name": "AI Administration Library",
+      "publisher": "EOS Solutions",
+      "version": "23.0.0.0"
     }
   ],
   "screenshots": [],
