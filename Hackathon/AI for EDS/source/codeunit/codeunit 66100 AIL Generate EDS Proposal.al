@@ -27,8 +27,13 @@ codeunit 66100 "AIL Generate EDS Proposal"
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
         AILEntities: Record "AIL Entities";
+        FromEDSStatus: Code[10];
+        ToEDSStatus: Code[10];
     begin
         Chat(UserPrompt, AILEntities);
+
+        Clear(FromEDSStatus);
+        Clear(ToEDSStatus);
 
         case TableID of
             Database::"Sales Header":
@@ -36,7 +41,32 @@ codeunit 66100 "AIL Generate EDS Proposal"
                     SalesHeader.Reset();
                     SalesHeader.SetRange("Document Type", DocumentType);
                     SalesHeader.SetFilter("EOS DS Status Code", '<>%1', '');
-                    //TODO filter from AI
+
+                    // filter from AI entities
+                    AILEntities.Reset();
+                    if AILEntities.FindSet() then
+                        repeat
+                            case AILEntities.Entity of
+                                'edsStatus':
+                                    begin
+                                        FromEDSStatus := AILEntities.Text;
+                                        case Intent of
+                                            Intent::edsInspect,
+                                            Intent::edsChange:
+                                                SalesHeader.SetFilter("EOS DS Status Code", '%1&<>%2', ToEDSStatus, '');
+                                        end;
+                                    end;
+                                'edsStatusTo':
+                                    begin
+                                        ToEDSStatus := AILEntities.Text;
+                                        case Intent of
+                                            Intent::edsChange:
+                                                SalesHeader.SetFilter("EOS DS Status Code", '<>%1&<>%2', '', ToEDSStatus);
+                                        end;
+                                    end;
+                            end;
+                        until AILEntities.Next() = 0;
+
                     if SalesHeader.FindSet() then
                         repeat
                             TmpEDSAIProposal.Init();
@@ -45,7 +75,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal.Code := SalesHeader."No.";
                             TmpEDSAIProposal.Description := SalesHeader."Sell-to Customer Name";
                             TmpEDSAIProposal."EDS Status" := SalesHeader."EOS DS Status Code";
-                            TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
+                            TmpEDSAIProposal."New EDS Status" := ToEDSStatus;
                             TmpEDSAIProposal.Insert();
                         until SalesHeader.Next() = 0;
                 end;
@@ -53,7 +83,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                 begin
                     Customer.Reset();
                     Customer.SetFilter("EOS DS Status Code", '<>%1', '');
-                    //TODO filter from AI
+                    // filter from AI entities
                     if Customer.FindSet() then
                         repeat
                             TmpEDSAIProposal.Init();

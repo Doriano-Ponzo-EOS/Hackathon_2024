@@ -101,7 +101,7 @@ page 66100 "AIL Copilot EDS Proposal"
     begin
         CurrPage.Caption := Text001Lbl;
         Title := Text002Lbl;
-        //ChatRequest := 'Chiudi tutti gli ordini di vendita aperti non modificati da 3 giorni';
+        ChatRequest := 'Mostra gli ordini aperti del mese scorso';
     end;
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean

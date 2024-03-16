@@ -86,8 +86,10 @@ codeunit 66000 "AIL SendRequest"
         JTok: JsonToken;
         JTopIntent: JsonToken;
         JEntities: JsonToken;
+        JExtraInfo: JsonToken;
         TopIntentTxt: Text;
         JArray: JsonArray;
+        JArray2: JsonArray;
         jEntityTok: JsonToken;
         Intents: List of [Text];
         OrdinalValue: Integer;
@@ -113,8 +115,12 @@ codeunit 66000 "AIL SendRequest"
             i += 1;
             jEntityTok.AsObject().Get('category', JTok);
             tmp_entities.Entity := JTok.AsValue().AsText();
-            jEntityTok.AsObject().Get('text', JTok);
-            tmp_entities.Text := JTok.AsValue().AsText();
+            if jEntityTok.SelectToken('$.extraInformation[0].key', JExtraInfo) then
+                tmp_entities.Text := JExtraInfo.AsValue().AsText()
+            else begin
+                jEntityTok.AsObject().Get('text', JTok);
+                tmp_entities.Text := JTok.AsValue().AsText();
+            end;
             tmp_entities.Insert();
         end;
 
