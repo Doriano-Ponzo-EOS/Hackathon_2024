@@ -27,15 +27,8 @@ codeunit 66100 "AIL Generate EDS Proposal"
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
         AILEntities: Record "AIL Entities";
-        InStr: InStream;
-        OutStr: OutStream;
-        CurrInd, LineNo : Integer;
-        DateVar: Date;
     begin
         Chat(UserPrompt, AILEntities);
-
-        Clear(OutStr);
-        Intent := Intent::"EDSChange";
 
         case TableID of
             Database::"Sales Header":

@@ -101,6 +101,7 @@ page 66100 "AIL Copilot EDS Proposal"
     begin
         CurrPage.Caption := Text001Lbl;
         Title := Text002Lbl;
+        //ChatRequest := 'Chiudi tutti gli ordini di vendita aperti non modificati da 3 giorni';
     end;
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
@@ -133,7 +134,7 @@ page 66100 "AIL Copilot EDS Proposal"
         if (Attempts < 5) then begin
             Load(TmpEDSAIProposal);
         end else
-            Error('Something went wrong. Please try again. ' + GetLastErrorText());
+            Error(Text003Err + GetLastErrorText());
     end;
 
     procedure SetEDSKey(TableID2: Integer)
