@@ -23,6 +23,7 @@ page 66000 "AIL Library Setup"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Subscription field.';
+                    ExtendedDatatype = Masked;
                 }
                 field("API Version"; Rec."API Version")
                 {
