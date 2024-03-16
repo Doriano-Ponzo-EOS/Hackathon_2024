@@ -19,14 +19,35 @@ page 66151 "AIL Copilot CDW Proposal Sub"
                 {
                     ApplicationArea = All;
                 }
-                field("Code"; Rec."Code")
+                field("Document No."; Rec."Document No.")
                 {
-                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Document No. field.';
                 }
-                field(Name; Rec.Description)
+                field("Posting Date"; Rec."Posting Date")
                 {
-                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Posting Date field.';
                 }
+                field("Document Date"; Rec."Document Date")
+                {
+                    ToolTip = 'Specifies the value of the Document Date field.';
+                }
+                field("Nr."; Rec."No.")
+                {
+                    ToolTip = 'Specifies the value of the Nr. field.';
+                }
+                field(Description; Rec.Description)
+                {
+                    ToolTip = 'Specifies the value of the Description field.';
+                }
+                field(Quantity; Rec.Quantity)
+                {
+                    ToolTip = 'Specifies the value of the Quantity field.';
+                }
+                field("Reason Code"; Rec."Reason Code")
+                {
+                    ToolTip = 'Specifies the value of the Reason Code field.';
+                }
+
             }
         }
     }
