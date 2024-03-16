@@ -1,6 +1,7 @@
-table 66001 "AIL Entities"
+table 66003 "AIL Entities"
 {
     Caption = 'AIL Entities';
+    TableType = Temporary;
 
     fields
     {
