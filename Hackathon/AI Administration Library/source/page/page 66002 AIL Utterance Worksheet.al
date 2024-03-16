@@ -50,6 +50,17 @@ page 66002 "AIL Utterance Worksheet"
                     Message('TBD');
                 end;
             }
+            action(TrainUtterance)
+            {
+                ApplicationArea = All;
+                Image = Setup;
+                Caption = 'Train data';
+                trigger OnAction()
+                begin
+                    sleep(5000);
+                    Message('Train completato');
+                end;
+            }
         }
     }
 
