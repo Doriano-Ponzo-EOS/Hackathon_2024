@@ -40,7 +40,6 @@ codeunit 66100 "AIL Generate EDS Proposal"
                 begin
                     SalesHeader.Reset();
                     SalesHeader.SetRange("Document Type", DocumentType);
-                    SalesHeader.SetFilter("EOS DS Status Code", '<>%1', '');
 
                     // filter from AI entities
                     AILEntities.Reset();
@@ -64,6 +63,10 @@ codeunit 66100 "AIL Generate EDS Proposal"
                                                 SalesHeader.SetFilter("EOS DS Status Code", '<>%1&<>%2', '', ToEDSStatus);
                                         end;
                                     end;
+                                'edsDate':
+                                    begin
+                                        SalesHeader.SetRange("Document Date", AILEntities."From Date", AILEntities."To Date");
+                                    end;
                             end;
                         until AILEntities.Next() = 0;
 
@@ -75,7 +78,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal.Code := SalesHeader."No.";
                             TmpEDSAIProposal.Description := SalesHeader."Sell-to Customer Name";
                             TmpEDSAIProposal."EDS Status" := SalesHeader."EOS DS Status Code";
-                            TmpEDSAIProposal."Creation Date Time" := SalesHeader.SystemCreatedAt;
+                            TmpEDSAIProposal."Date" := SalesHeader."Document Date";
                             TmpEDSAIProposal."New EDS Status" := ToEDSStatus;
                             TmpEDSAIProposal.Insert();
                         until SalesHeader.Next() = 0;
@@ -92,7 +95,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal."System ID" := Customer.SystemId;
                             TmpEDSAIProposal.Code := Customer."No.";
                             TmpEDSAIProposal.Description := Customer.Name;
-                            TmpEDSAIProposal."Creation Date Time" := SalesHeader.SystemCreatedAt;
+                            TmpEDSAIProposal."Date" := SalesHeader."Document Date";
                             TmpEDSAIProposal."EDS Status" := Customer."EOS DS Status Code";
                             TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
                             TmpEDSAIProposal.Insert();

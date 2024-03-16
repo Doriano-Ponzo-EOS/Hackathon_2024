@@ -83,6 +83,10 @@
           <source>Table ID</source>
           <target>ID tabella</target>
         </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 3192175264 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Date</source>
+          <target>Data</target>
+        </trans-unit>
         <trans-unit id="Table 1430685156 - Field 3461834954 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Description</source>
           <target>Descrizione</target>
@@ -90,10 +94,6 @@
         <trans-unit id="TableExtension 3846944949 - Field 229539232 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>EDS Project Name</source>
           <target>Nome del progetto EDS</target>
-        </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3629644124 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Creation Date Time</source>
-          <target>Data ora creazione</target>
         </trans-unit>
       </group>
     </body>

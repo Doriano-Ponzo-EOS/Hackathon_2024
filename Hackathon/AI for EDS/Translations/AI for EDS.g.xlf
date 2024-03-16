@@ -8,10 +8,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Code - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3629644124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Creation Date Time</source>
+        <trans-unit id="Table 1430685156 - Field 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Creation Date Time - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot EDS Proposal - Field Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1430685156 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description</source>

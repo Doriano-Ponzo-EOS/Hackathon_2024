@@ -14,6 +14,12 @@ table 66003 "AIL Entities"
         field(3; Text; Text[250])
         {
         }
+        field(10; "From Date"; Date)
+        {
+        }
+        field(11; "To Date"; Date)
+        {
+        }
     }
 
     keys

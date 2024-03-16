@@ -30,7 +30,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 {
                     ApplicationArea = All;
                 }
-                field("Creation Date Time"; Rec."Creation Date Time")
+                field("Date"; Rec."Date")
                 {
                     ApplicationArea = All;
                 }
@@ -80,6 +80,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 RecRef.Open(EDSAIProposal2."Table ID");
                 RecRef.GetBySystemId(EDSAIProposal2."System ID");
                 DSMgt.ChangeDirectStatus(RecRef, EDSAIProposal2."EDS Status", EDSAIProposal2."New EDS Status", '');
+                RecRef.Close();
             until EDSAIProposal2.Next() = 0;
     end;
 

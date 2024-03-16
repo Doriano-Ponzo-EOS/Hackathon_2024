@@ -107,7 +107,10 @@ page 66100 "AIL Copilot EDS Proposal"
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     begin
         if CloseAction = CloseAction::OK then begin
-            CurrPage.SubsProposalSub.Page.ChangeEDSStatus();
+            case Intent of
+                Intent::edsChange:
+                    CurrPage.SubsProposalSub.Page.ChangeEDSStatus();
+            end;
         end;
     end;
 
@@ -125,7 +128,7 @@ page 66100 "AIL Copilot EDS Proposal"
         TmpEDSAIProposal.DeleteAll();
 
         Attempts := 0;
-        while TmpEDSAIProposal.IsEmpty and (Attempts < 5) do begin
+        while TmpEDSAIProposal.IsEmpty and (Attempts < 1) do begin
             if GenEDSProposal.Run() then
                 GenEDSProposal.GetResult(TmpEDSAIProposal, Intent);
             Attempts += 1;

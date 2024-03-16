@@ -107,6 +107,14 @@
           <source>Text</source>
           <target>Testo</target>
         </trans-unit>
+        <trans-unit id="Table 248550859 - Field 2110632758 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>From Date</source>
+          <target>Da data</target>
+        </trans-unit>
+        <trans-unit id="Table 248550859 - Field 2565971985 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>To Date</source>
+          <target>A data</target>
+        </trans-unit>
         <trans-unit id="Table 248550859 - Field 3247369565 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Entity</source>
           <target>Entità</target>

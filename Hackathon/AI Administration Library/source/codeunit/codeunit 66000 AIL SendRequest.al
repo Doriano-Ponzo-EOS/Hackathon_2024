@@ -87,16 +87,16 @@ codeunit 66000 "AIL SendRequest"
         JTopIntent: JsonToken;
         JEntities: JsonToken;
         JExtraInfo: JsonToken;
+        JFromDate: JsonToken;
+        JToDate: JsonToken;
         TopIntentTxt: Text;
         JArray: JsonArray;
-        JArray2: JsonArray;
         jEntityTok: JsonToken;
         Intents: List of [Text];
         OrdinalValue: Integer;
         Index: Integer;
         LevelName: Text;
         i: Integer;
-
     begin
         JObj.ReadFrom(ResponseTxt);
         JObj.SelectToken('$.result.prediction.topIntent', JTopIntent);
@@ -115,11 +115,19 @@ codeunit 66000 "AIL SendRequest"
             i += 1;
             jEntityTok.AsObject().Get('category', JTok);
             tmp_entities.Entity := JTok.AsValue().AsText();
-            if jEntityTok.SelectToken('$.extraInformation[0].key', JExtraInfo) then
-                tmp_entities.Text := JExtraInfo.AsValue().AsText()
-            else begin
+            if jEntityTok.SelectToken('$.extraInformation[0].key', JExtraInfo) then begin
+                tmp_entities.Text := JExtraInfo.AsValue().AsText();
+            end else begin
                 jEntityTok.AsObject().Get('text', JTok);
                 tmp_entities.Text := JTok.AsValue().AsText();
+                if jEntityTok.SelectToken('$.resolutions[0].begin', JFromDate) then
+                    Evaluate(tmp_entities."From Date", JFromDate.AsValue().AsText());
+                if jEntityTok.SelectToken('$.resolutions[0].end', JToDate) then
+                    Evaluate(tmp_entities."To Date", JToDate.AsValue().AsText());
+                if jEntityTok.SelectToken('$.resolutions[0].value', JFromDate) then begin
+                    Evaluate(tmp_entities."From Date", JFromDate.AsValue().AsText());
+                    Evaluate(tmp_entities."To Date", JFromDate.AsValue().AsText());
+                end;
             end;
             tmp_entities.Insert();
         end;

@@ -18,10 +18,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field Entry No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 248550859 - Field 2110632758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field From Date - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 248550859 - Field 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 248550859 - Field 2565971985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>To Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field To Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 935861405 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Intent Selection</source>
