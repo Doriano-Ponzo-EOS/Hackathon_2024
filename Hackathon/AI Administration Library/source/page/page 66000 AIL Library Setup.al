@@ -57,7 +57,7 @@ page 66000 "AIL Library Setup"
                 var
                     AILAPICall: Codeunit "AIL SendRequest";
                     TopIntent: Enum "AIL Intent";
-                    TempAILEntities: Record "AIL Entities" temporary;
+                    TempAILEntities: Record "AIL Entities";
                 begin
                     AILAPICall.SendLSRequest('Porta in stato chiuso ordine 15000', TopIntent, TempAILEntities);
                     Message('%1');
