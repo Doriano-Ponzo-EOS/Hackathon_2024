@@ -3,30 +3,150 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AI for CDW">
     <body>
       <group id="body">
-        <trans-unit id="Table 1566783110 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Code</source>
+        <trans-unit id="Table 1566783110 - Field 1208376509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Posting Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Code - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Cost Posting Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 4255030724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CWS No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field CWS No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1566783110 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 47657272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Description 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1527563463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field External Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 629385458 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoiced Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Invoiced Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3585791758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoiced Quantity (Base)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Invoiced Quantity (Base) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 806193894 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty. per Unit of Measure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Qty. per Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1317910145 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty. to Close</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Qty. To Close - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3989027157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty. to Close (base)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Qty. To Close (Base) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3179217921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity (Base)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Quantity (Base) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1908046867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Reason Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1566783110 - Field 3117446396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Select - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1566783110 - Field 3076185996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>System ID</source>
+        <trans-unit id="Table 1566783110 - Field 1488755655 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-To/Buy-From Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field System ID - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Sell-To/Buy-From Name - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1566783110 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Table ID</source>
+        <trans-unit id="Table 1566783110 - Field 1581983319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-To/Buy-From No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Table ID - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Sell-To/Buy-From No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3371451125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Document Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Source Document Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 4267346559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Source Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1977110138 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Document Subtype</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Source Document Subtype - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 587895070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Source Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 2385270358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of Measure Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Unit of Measure Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1088238421 - Method 629747849 - NamedType 437826006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No CDW type found in AI entities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AIL Generate CDW Proposal - Method GenerateCDWProposal - NamedType newLabel</note>
         </trans-unit>
         <trans-unit id="Page 1566783110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Suggest CDW changes with Copilot</source>
@@ -87,6 +207,41 @@
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control CDWDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 580412389 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Document Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 3142240974 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Nr. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Nr. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 3710982960 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Posting Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Posting Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Quantity field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 1908046867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Reason Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control Reason Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3677320706 - Action 3614074036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2433932303">
           <source>Suggest with Copilot</source>

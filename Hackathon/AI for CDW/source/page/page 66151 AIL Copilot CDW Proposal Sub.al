@@ -5,6 +5,8 @@ page 66151 "AIL Copilot CDW Proposal Sub"
     UsageCategory = Lists;
     SourceTable = "AIL Copilot CDW Proposal";
     Caption = 'CDW Proposal';
+    InsertAllowed = false;
+    DeleteAllowed = false;
 
     layout
     {
@@ -86,4 +88,30 @@ page 66151 "AIL Copilot CDW Proposal Sub"
 
     var
         Intent: Enum "AIL Intent";
+
+    procedure ImportCDWLines()
+    var
+        EDSAIProposal2: Record "AIL Copilot CDW Proposal";
+        EOS041DocumentHandling: Codeunit "EOS041 Document Handling";
+        RecRef: RecordRef;
+        NextLineNo: Integer;
+        CdwDocument: Enum "EOS041 Document Type";
+        Document: Interface "EOS041 IDocumentHandler v2";
+
+        CdwJnlLine: Record "EOS041 CDW Journal Line";
+    begin
+        EDSAIProposal2.Copy(Rec, true);
+        EDSAIProposal2.SetRange(Select, true);
+
+        if EDSAIProposal2.FindSet() then
+            repeat
+                // Aggiorna stato
+                Document := CdwDocument::"Sales Shipment Line";
+                NextLineNo += 10000;
+                CdwJnlLine.Init();
+                CdwJnlLine.TransferFields(EDSAIProposal2);
+                CdwJnlLine.Insert();
+
+            until EDSAIProposal2.Next() = 0;
+    end;
 }

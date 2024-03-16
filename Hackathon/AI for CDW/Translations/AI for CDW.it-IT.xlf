@@ -43,9 +43,37 @@
           <source>Suggest CDW changes with Copilot</source>
           <target>Suggerisci proposte CDW con Copilot</target>
         </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 1908046867 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Reason Code field.</source>
+          <target>Specifica il valore del campo Codice motivo.</target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 2704404533 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Quantity field.</source>
+          <target>Specifica il valore del campo Quantità.</target>
+        </trans-unit>
         <trans-unit id="Page 2594487034 - Control 2939544070 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source> </source>
           <target> </target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 3142240974 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Nr. field.</source>
+          <target>Specifica il valore del campo Nr.</target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 3461834954 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <target>Specifica il valore del campo Descrizione.</target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 3710982960 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Posting Date field.</source>
+          <target>Specifica il valore del campo Data di registrazione.</target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 486908828 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Document No. field.</source>
+          <target>Specifica il valore del documento n. campo.</target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 580412389 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Document Date field.</source>
+          <target>Specifica il valore del campo Data documento.</target>
         </trans-unit>
         <trans-unit id="Page 2594487034 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>CDW Proposal</source>
@@ -55,25 +83,117 @@
           <source>Suggest with Copilot</source>
           <target>Suggerisci con Copilot</target>
         </trans-unit>
-        <trans-unit id="Table 1566783110 - Field 3004954119 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Code</source>
-          <target>Codice</target>
+        <trans-unit id="Table 1566783110 - Field 1208376509 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Amount Posting Type</source>
+          <target>Tipo registrazione importo</target>
         </trans-unit>
-        <trans-unit id="Table 1566783110 - Field 3076185996 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>System ID</source>
-          <target>System ID</target>
+        <trans-unit id="Table 1566783110 - Field 1317910145 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Qty. to Close</source>
+          <target>Qtà. da chiudere</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1488755655 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Sell-To/Buy-From Name</source>
+          <target>Vendere a/Acq. da - Nome</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1527563463 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>External Document No.</source>
+          <target>Nr. documento esterno</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1581983319 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Sell-To/Buy-From No.</source>
+          <target>Vendere a/Acq. da - Nr.</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1878130204 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Type</source>
+          <target>Tipo</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1908046867 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Reason Code</source>
+          <target>Causale</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 1977110138 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Source Document Subtype</source>
+          <target>Sottotipo documento</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 2385270358 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Unit of Measure Code</source>
+          <target>Cod. unità di misura</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 2704330142 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Name</source>
+          <target>Nome</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 2704404533 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Quantità</target>
         </trans-unit>
         <trans-unit id="Table 1566783110 - Field 3117446396 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Select</source>
           <target>Seleziona</target>
         </trans-unit>
-        <trans-unit id="Table 1566783110 - Field 3135334477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Table ID</source>
-          <target>ID tabella</target>
+        <trans-unit id="Table 1566783110 - Field 3179217921 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Quantity (Base)</source>
+          <target>Quantità (base)</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3320823955 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Nr. riga</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3371451125 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Source Document Line No.</source>
+          <target>Nr. riga documento</target>
         </trans-unit>
         <trans-unit id="Table 1566783110 - Field 3461834954 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Description</source>
           <target>Descrizione</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3585791758 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Invoiced Quantity (Base)</source>
+          <target>Quantità fatturata (Base)</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3710982960 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Data di registrazione</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3989027157 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Qty. to Close (base)</source>
+          <target>Qtà. da chiudere</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 4200184881 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 4255030724 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>CWS No.</source>
+          <target>CWS Nr.</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 4267346559 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Source Document No.</source>
+          <target>Nr. documento origine</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 47657272 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Description 2</source>
+          <target>Descrizione 2</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 486908828 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Document No.</source>
+          <target>Nr. documento</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 580412389 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Document Date</source>
+          <target>Data documento</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 587895070 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Source Document Type</source>
+          <target>Tipo documento origine</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 629385458 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Invoiced Quantity</source>
+          <target>Quantità fatturata</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 806193894 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Qty. per Unit of Measure</source>
+          <target>Qtà per unità di misura</target>
         </trans-unit>
         <trans-unit id="TableExtension 4106681218 - Field 3746462434 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>CDW Project Name</source>

@@ -60,9 +60,9 @@ codeunit 66150 "AIL Generate CDW Proposal"
                 begin
                     Document := CdwDocument::"Sales Shipment Line";
                     Document.GetDocumentLines(Filters, TempDocumentLine);
-                    if not Confirm('1_%1', True, TempDocumentLine.Count) then Error('');
+
                     RegroupDocumentLines(TempDocumentLine);
-                    if not Confirm('2_ %1', True, TempDocumentLine.Count) then Error('');
+
                     TempDocumentLine.SetCurrentKey("Source Document Type", "Source Document No.", "Source Document Line No.");
 
                     AILEntities.SetRange(Entity, 'cdw_reason');
@@ -76,7 +76,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
 
                     TempDocumentLine.SetRange("Source Document Line No.", 0);
                     TempDocumentLine.SetRange("Sell-To/Buy-From Name", AILEntities.Text);
-                    if not Confirm('3_ %1', True, TempDocumentLine.Count) then Error('');
+
                     if TempDocumentLine.FindSet() then begin
 
                         repeat
@@ -87,14 +87,8 @@ codeunit 66150 "AIL Generate CDW Proposal"
                             repeat
 
                                 TmpCDWAIProposal.Init();
-                                TmpCDWAIProposal."Table ID" := TableID;
-                                TmpCDWAIProposal."System ID" := TempDocumentLine2.SystemId;
-                                TmpCDWAIProposal."Document No." := TempDocumentLine2."Document No.";
-                                TmpCDWAIProposal."Posting Date" := TempDocumentLine2."Posting Date";
-                                TmpCDWAIProposal."Document Date" := TempDocumentLine2."Document Date";
-                                TmpCDWAIProposal."No." := TempDocumentLine2."External Document No.";
-                                TmpCDWAIProposal.Description := TempDocumentLine2.Description;
-                                TmpCDWAIProposal.Quantity := TempDocumentLine2.Quantity;
+                                TmpCDWAIProposal.TransferFields(TempDocumentLine2);
+                                TmpCDWAIProposal."Journal Batch Name" := 'DEFAULT';
                                 TmpCDWAIProposal."Reason Code" := ReasonCode;
                                 TmpCDWAIProposal.Insert();
 
