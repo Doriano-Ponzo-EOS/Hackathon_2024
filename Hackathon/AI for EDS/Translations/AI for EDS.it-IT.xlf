@@ -87,6 +87,10 @@
           <source>Description</source>
           <target>Descrizione</target>
         </trans-unit>
+        <trans-unit id="Table 1430685156 - Field 3629644124 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Creation Date Time</source>
+          <target>Data ora creazione</target>
+        </trans-unit>
       </group>
     </body>
   </file>

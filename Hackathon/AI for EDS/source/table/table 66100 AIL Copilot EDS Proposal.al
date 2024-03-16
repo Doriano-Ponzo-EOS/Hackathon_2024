@@ -35,6 +35,10 @@ table 66100 "AIL Copilot EDS Proposal"
             Caption = 'New EDS Status';
             Editable = false;
         }
+        field(15; "Creation Date Time"; DateTime)
+        {
+            Caption = 'Creation Date Time';
+        }
         field(22; Select; Boolean)
         {
             Caption = 'Select';

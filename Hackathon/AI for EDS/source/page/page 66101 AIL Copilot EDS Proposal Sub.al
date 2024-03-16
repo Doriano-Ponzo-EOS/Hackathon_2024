@@ -30,6 +30,10 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 {
                     ApplicationArea = All;
                 }
+                field("Creation Date Time"; Rec."Creation Date Time")
+                {
+                    ApplicationArea = All;
+                }
                 field("EDS Status"; Rec."EDS Status")
                 {
                     ApplicationArea = All;

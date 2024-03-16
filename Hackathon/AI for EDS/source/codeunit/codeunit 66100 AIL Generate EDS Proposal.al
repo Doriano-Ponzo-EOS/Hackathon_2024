@@ -53,7 +53,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                                         case Intent of
                                             Intent::edsInspect,
                                             Intent::edsChange:
-                                                SalesHeader.SetFilter("EOS DS Status Code", '%1&<>%2', ToEDSStatus, '');
+                                                SalesHeader.SetFilter("EOS DS Status Code", '%1&<>%2', FromEDSStatus, '');
                                         end;
                                     end;
                                 'edsStatusTo':
@@ -75,6 +75,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal.Code := SalesHeader."No.";
                             TmpEDSAIProposal.Description := SalesHeader."Sell-to Customer Name";
                             TmpEDSAIProposal."EDS Status" := SalesHeader."EOS DS Status Code";
+                            TmpEDSAIProposal."Creation Date Time" := SalesHeader.SystemCreatedAt;
                             TmpEDSAIProposal."New EDS Status" := ToEDSStatus;
                             TmpEDSAIProposal.Insert();
                         until SalesHeader.Next() = 0;
@@ -91,6 +92,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
                             TmpEDSAIProposal."System ID" := Customer.SystemId;
                             TmpEDSAIProposal.Code := Customer."No.";
                             TmpEDSAIProposal.Description := Customer.Name;
+                            TmpEDSAIProposal."Creation Date Time" := SalesHeader.SystemCreatedAt;
                             TmpEDSAIProposal."EDS Status" := Customer."EOS DS Status Code";
                             TmpEDSAIProposal."New EDS Status" := ''; //TODO new status from AI
                             TmpEDSAIProposal.Insert();
