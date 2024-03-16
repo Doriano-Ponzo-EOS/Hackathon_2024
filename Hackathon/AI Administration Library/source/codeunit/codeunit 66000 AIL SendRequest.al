@@ -1,20 +1,20 @@
 codeunit 66000 "AIL SendRequest"
 {
 
-    procedure SendLSRequest(Question: Text; var TopIntent: Enum "AIL Intent"; var tmp_entities: Record "AIL Entities")
+    procedure SendLSRequest(Question: Text; var TopIntent: Enum "AIL Intent"; var tmp_entities: Record "AIL Entities"; ProjectName: Text)
     var
         jsonData: Text;
         RequestMessage: HttpRequestMessage;
         ResponseTxt: Text;
     begin
-        jsonData := GetRequestBody(Question);
+        jsonData := GetRequestBody(Question, ProjectName);
         GetRequestMessage(RequestMessage, jsonData);
         ResponseTxt := SendRequestMessage(RequestMessage);
         ParseResponseText(ResponseTxt, TopIntent, tmp_entities);
     end;
 
 
-    local procedure GetRequestBody(Question: Text) requestBody: Text
+    local procedure GetRequestBody(Question: Text; ProjectName: Text) requestBody: Text
     var
         AILSetup: Record "AIL Library Setup";
         JsonDataSrc: Label '{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}';
@@ -23,7 +23,7 @@ codeunit 66000 "AIL SendRequest"
         requestBody := JsonDataSrc;
         requestBody := requestBody.Replace('{{userID}}', UserId);
         requestBody := requestBody.Replace('{{RequestText}}', Question);
-        requestBody := requestBody.Replace('{{ProjectName}}', AILSetup."Project Name");
+        requestBody := requestBody.Replace('{{ProjectName}}', ProjectName);
         requestBody := requestBody.Replace('{{Deployment}}', AILSetup."Deployment Name");
     end;
 

@@ -13,6 +13,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field Entity - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 248550859 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field Entry No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 248550859 - Field 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Text</source>
           <note from="Developer" annotates="general" priority="2"></note>

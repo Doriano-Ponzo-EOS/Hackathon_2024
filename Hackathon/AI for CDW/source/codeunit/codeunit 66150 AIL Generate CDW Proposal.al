@@ -25,6 +25,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
     var
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
+        AILEntities: Record "AIL Entities";
         TmpXmlBuffer: Record "XML Buffer" temporary;
         TempBlob: Codeunit "Temp Blob";
         InStr: InStream;
@@ -34,7 +35,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
         TmpText: Text;
     begin
         TempBlob.CreateOutStream(OutStr);
-        TmpText := Chat(UserPrompt);
+        Chat(UserPrompt, AILEntities);
         OutStr.WriteText(TmpText);
         TempBlob.CreateInStream(InStr);
 
@@ -77,41 +78,19 @@ codeunit 66150 "AIL Generate CDW Proposal"
         end;
     end;
 
-    procedure Chat(ChatUserPrompt: Text): Text
+    procedure Chat(ChatUserPrompt: Text; var AILEntities: Record "AIL Entities")
     var
-        AzureOpenAI: Codeunit "Azure OpenAI";
-        EnvironmentInformation: Codeunit "Environment Information";
-        AOAIOperationResponse: Codeunit "AOAI Operation Response";
-        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
-        AOAIChatMessages: Codeunit "AOAI Chat Messages";
-        //IsolatCDWtorageWrapper: Codeunit "Isolated Storage Wrapper";
+        AILLibrarySetup: Record "AIL Library Setup";
+        AILSendRequest: Codeunit "AIL SendRequest";
         Result: Text;
-        EntityTextModuleInfo: ModuleInfo;
     begin
-        // These funtions in the "Azure Open AI" codeunit will be available in Business Central online later this year.
-        // You will need to use your own key for Azure OpenAI for all your Copilot features (for both development and production).
-        /*AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions", IsolatCDWtorageWrapper.GetEndpoint(), IsolatCDWtorageWrapper.GetDeployment(), IsolatCDWtorageWrapper.GetSecretKey());
+        AILLibrarySetup.Get();
+        AILLibrarySetup.TestField("AIL CDW Project Name");
 
-        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::"Find Item Substitutions");
+        AILEntities.Reset();
+        AILEntities.DeleteAll();
 
-        AOAIChatCompletionParams.SetMaxTokens(2500);
-        AOAIChatCompletionParams.SetTemperature(0);
-
-        AOAIChatMessages.AddSystemMessage(ChatSystemPrompt);
-        AOAIChatMessages.AddUserMessage(ChatUserPrompt);
-
-        AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
-
-        if AOAIOperationResponse.IsSuccess() then
-            Result := AOAIChatMessages.GetLastMessage()
-        else
-            Error(AOAIOperationResponse.GetError());
-
-        Result := Result.Replace('&', '&amp;');
-        Result := Result.Replace('"', '');
-        Result := Result.Replace('''', '');*/
-
-        exit(Result);
+        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities, AILLibrarySetup."AIL CDW Project Name");
     end;
 
     var

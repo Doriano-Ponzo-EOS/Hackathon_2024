@@ -111,6 +111,10 @@
           <source>Entity</source>
           <target>Entità</target>
         </trans-unit>
+        <trans-unit id="Table 248550859 - Field 883711285 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Nr. movimento</target>
+        </trans-unit>
         <trans-unit id="Table 248550859 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>AIL Entities</source>
           <target>Entità AIL</target>

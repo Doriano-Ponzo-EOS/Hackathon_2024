@@ -71,14 +71,17 @@ codeunit 66100 "AIL Generate EDS Proposal"
 
     procedure Chat(ChatUserPrompt: Text; var AILEntities: Record "AIL Entities")
     var
+        AILLibrarySetup: Record "AIL Library Setup";
         AILSendRequest: Codeunit "AIL SendRequest";
         Result: Text;
-        EntityTextModuleInfo: ModuleInfo;
     begin
+        AILLibrarySetup.Get();
+        AILLibrarySetup.TestField("AIL EDS Project Name");
+
         AILEntities.Reset();
         AILEntities.DeleteAll();
 
-        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities);
+        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities, AILLibrarySetup."AIL EDS Project Name");
     end;
 
     var
