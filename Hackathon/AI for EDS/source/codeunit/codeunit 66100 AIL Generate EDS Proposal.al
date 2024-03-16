@@ -27,20 +27,12 @@ codeunit 66100 "AIL Generate EDS Proposal"
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
         AILEntities: Record "AIL Entities";
-        TempBlob: Codeunit "Temp Blob";
         InStr: InStream;
         OutStr: OutStream;
         CurrInd, LineNo : Integer;
         DateVar: Date;
-        TmpText: Text;
     begin
-        TempBlob.CreateOutStream(OutStr);
-        TmpText := Chat(UserPrompt, Intent, AILEntities);
-        OutStr.WriteText(TmpText);
-        TempBlob.CreateInStream(InStr);
-
-        /*TmpXmlBuffer.DeleteAll();
-        TmpXmlBuffer.LoadFromStream(InStr);*/
+        Chat(UserPrompt, AILEntities);
 
         Clear(OutStr);
         Intent := Intent::"EDSChange";
