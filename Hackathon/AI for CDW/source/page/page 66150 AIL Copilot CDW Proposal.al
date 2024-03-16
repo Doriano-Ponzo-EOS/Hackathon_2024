@@ -123,7 +123,7 @@ page 66150 "AIL Copilot CDW Proposal"
         TmpCDWAIProposal.DeleteAll();
 
         Attempts := 0;
-        while TmpCDWAIProposal.IsEmpty and (Attempts < 5) do begin
+        while TmpCDWAIProposal.IsEmpty and (Attempts < 1) do begin
             if GenCDWProposal.Run() then
                 GenCDWProposal.GetResult(TmpCDWAIProposal, Intent);
             Attempts += 1;

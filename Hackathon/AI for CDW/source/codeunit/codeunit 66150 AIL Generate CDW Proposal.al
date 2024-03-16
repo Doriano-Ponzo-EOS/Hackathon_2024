@@ -53,25 +53,30 @@ codeunit 66150 "AIL Generate CDW Proposal"
         if not AILEntities.FindSet() then
             error(newLabel);
 
-        case AILEntities.Entity of
-            'cdw_type':
+        Intent := Intent::CDWPrepare;
+
+        case AILEntities.Text of
+            'Shipment':
                 begin
                     Document := CdwDocument::"Sales Shipment Line";
                     Document.GetDocumentLines(Filters, TempDocumentLine);
+                    if not Confirm('1_%1', True, TempDocumentLine.Count) then Error('');
                     RegroupDocumentLines(TempDocumentLine);
+                    if not Confirm('2_ %1', True, TempDocumentLine.Count) then Error('');
                     TempDocumentLine.SetCurrentKey("Source Document Type", "Source Document No.", "Source Document Line No.");
 
                     AILEntities.SetRange(Entity, 'cdw_reason');
                     AILEntities.FindFirst();
                     ReasonCode := AILEntities.Text;
 
-                    AILEntities.SetRange(Entity, 'filter_source');
+                    AILEntities.SetRange(Entity, 'filter_value');
                     AILEntities.FindFirst();
 
                     TempDocumentLine2.Copy(TempDocumentLine, true);
 
                     TempDocumentLine.SetRange("Source Document Line No.", 0);
                     TempDocumentLine.SetRange("Sell-To/Buy-From Name", AILEntities.Text);
+                    if not Confirm('3_ %1', True, TempDocumentLine.Count) then Error('');
                     if TempDocumentLine.FindSet() then begin
 
                         repeat
@@ -96,11 +101,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
                             until TempDocumentLine2.Next() = 0;
                         until TempDocumentLine.Next() = 0;
                     end;
-
-
                 end;
-
-
         end;
     end;
 
@@ -116,7 +117,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
         AILEntities.Reset();
         AILEntities.DeleteAll();
 
-        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities);
+        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities, AILLibrarySetup."AIL CDW Project Name");
     end;
 
     var
@@ -161,11 +162,11 @@ codeunit 66150 "AIL Generate CDW Proposal"
                     TempDocumentLine2 := GroupBuffer;
                     NextLineNo += 1;
                     TempDocumentLine2."Line No." := NextLineNo;
-                    TempDocumentLine.Insert();
+                    TempDocumentLine2.Insert();
                 end;
 
                 TempDocumentLine2 := TempDocumentLine;
-                TempDocumentLine.Insert();
+                TempDocumentLine2.Insert();
 
             until TempDocumentLine.Next() = 0;
         TempDocumentLine.Copy(TempDocumentLine2, true);
