@@ -1,6 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file datatype="xml" source-language="en-US" target-language="it-IT">
-    <body />
+    <body>
+      <group id="body">
+        <trans-unit id="Page 1566783110 - Action 2079045816 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Confirm</source>
+          <target>Conferma</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2388911040 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Regenerate CDW proposal with Dynamics 365 Copilot.</source>
+          <target>Rigenera proposte CDW con Dynamics 365 Copilot.</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2388911040 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Regenerate</source>
+          <target>Rigenera</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2626368477 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Generate CDW proposal with Dynamics 365 Copilot.</source>
+          <target>Genera proposte CDW con Dynamics 365 Copilot.</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2626368477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Generate</source>
+          <target>Genera</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 788258546 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Discard</source>
+          <target>Ignora</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - NamedType 1196336482" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest CDW changes with Copilot</source>
+          <target>Suggerisci proposte CDW con Copilot</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - NamedType 1753513791" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Request documents to close without invoicing. Example: Close all shipments of customer Spotsmeyer's Furnishings</source>
+          <target>Richiedi documenti da chiudere senza fatturare. Esempio: Chiudi tutte le spedizioni del cliente Spotsmeyer's Furnishings</target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - NamedType 672156893" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Something went wrong. Please try again. </source>
+          <target>Qualcosa è andato storto. Riprovare. </target>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest CDW changes with Copilot</source>
+          <target>Suggerisci proposte CDW con Copilot</target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 2939544070 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source> </source>
+          <target> </target>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>CDW Proposal</source>
+          <target>Proposte CDW</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 3677320706 - Action 3614074036 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest with Copilot</source>
+          <target>Suggerisci con Copilot</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3004954119 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Code</source>
+          <target>Codice</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3076185996 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>System ID</source>
+          <target>System ID</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3117446396 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Select</source>
+          <target>Seleziona</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3135334477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Table ID</source>
+          <target>ID tabella</target>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3461834954 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Description</source>
+          <target>Descrizione</target>
+        </trans-unit>
+      </group>
+    </body>
   </file>
 </xliff>

@@ -2,7 +2,98 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AI for CDW">
     <body>
-      <group id="body" />
+      <group id="body">
+        <trans-unit id="Table 1566783110 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3117446396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Select - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3076185996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field System ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1566783110 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Copilot CDW Proposal - Field Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest CDW changes with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - NamedType 1196336482" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suggest CDW changes with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - NamedType Text001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - NamedType 1753513791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request documents to close without invoicing. Example: Close all shipments of customer Spotsmeyer's Furnishings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - NamedType Text002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - NamedType 672156893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Something went wrong. Please try again. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - NamedType Text003Err</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Action Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2626368477 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate CDW proposal with Dynamics 365 Copilot.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Action Generate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2626368477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Action Generate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2079045816 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Action OK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2388911040 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Regenerate CDW proposal with Dynamics 365 Copilot.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Action Regenerate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1566783110 - Action 2388911040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Regenerate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal - Action Regenerate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CDW Proposal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2594487034 - Control 2939544070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Copilot CDW Proposal Sub - Control CDWDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3677320706 - Action 3614074036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2433932303">
+          <source>Suggest with Copilot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AIL PageExt66101 - Action AILSuggestCDWwithCopilot - Property Caption</note>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>

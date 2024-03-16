@@ -3,6 +3,21 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AI Administration Library">
     <body>
       <group id="body">
+        <trans-unit id="Table 248550859 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AIL Entities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 248550859 - Field 3247369565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field Entity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 248550859 - Field 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Entities - Field Text - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 935861405 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Intent Selection</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -23,10 +38,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2476498112 - Field 496600737 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AIL Endpoint</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field AIL Endpoint - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2476498112 - Field 3687300662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Version</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field API Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2476498112 - Field 177661602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deployment Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field Deployment Name - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2476498112 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Primary Key</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2476498112 - Field 904306078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field Project Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2476498112 - Field 736487848 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subscription Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AIL Library Setup - Field SubscriptionKey - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1912312219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Utterance Worksheet</source>
@@ -48,6 +88,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AIL Utterance Worksheet - Field Utterance - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1264012787 - Method 4056382217 - NamedType 4210818894" size-unit="char" translate="yes" xml:space="preserve">
+          <source>{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AIL SendRequest - Method GetRequestBody - NamedType JsonDataSrc</note>
+        </trans-unit>
         <trans-unit id="Page 2476498112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AI Library Setup (AIL)</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -57,6 +102,36 @@
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2476498112 - Control 496600737 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the AIL Endpoint field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control AIL Endpoint - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476498112 - Control 3687300662 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the API Version field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control API Version - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476498112 - Control 177661602 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Deployment Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control Deployment Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476498112 - Control 904306078 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Project Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control Project Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476498112 - Control 4040426973 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Subscription field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Control Subscription - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476498112 - Action 1352550224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test API Call</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AIL Library Setup - Action TestCall - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1912312219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Utterance Worksheet</source>

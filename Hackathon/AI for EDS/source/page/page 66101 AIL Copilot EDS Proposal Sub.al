@@ -4,7 +4,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "AIL Copilot EDS Proposal";
-    Caption = 'EDS Proposal';
+    Caption = 'EDS Proposals';
 
     layout
     {
@@ -18,7 +18,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 field(Select; Rec.Select)
                 {
                     ApplicationArea = All;
-                    Visible = Intent = Intent::EDS_Change;
+                    Visible = Intent = Intent::"EDSChange";
                 }
                 field("Code"; Rec."Code")
                 {
@@ -35,7 +35,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                 field("New EDS Status"; Rec."New EDS Status")
                 {
                     ApplicationArea = All;
-                    Visible = Intent = Intent::EDS_Change;
+                    Visible = Intent = Intent::"EDSChange";
                 }
             }
         }

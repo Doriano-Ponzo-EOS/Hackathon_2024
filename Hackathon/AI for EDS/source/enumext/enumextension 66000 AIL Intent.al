@@ -1,9 +1,9 @@
 enumextension 66100 "AIL EnumExt66100" extends "AIL Intent" //66000
 {
-    value(66100; "EDS_Change")
+    value(66100; "edsChange")
     {
     }
-    value(66101; "EDS_Inspect")
+    value(66101; "edsInspect")
     {
     }
 }
