@@ -93,6 +93,7 @@ codeunit 66000 "AIL SendRequest"
         OrdinalValue: Integer;
         Index: Integer;
         LevelName: Text;
+        i: Integer;
 
     begin
         JObj.ReadFrom(ResponseTxt);
@@ -105,8 +106,11 @@ codeunit 66000 "AIL SendRequest"
         TopIntent := Enum::"AIL Intent".FromInteger(OrdinalValue);
 
         JArray := JEntities.AsArray();
+        i := 0;
         foreach jEntityTok in JArray do begin
             tmp_entities.Init();
+            tmp_entities."Entry No." := i;
+            i += 1;
             jEntityTok.AsObject().Get('category', JTok);
             tmp_entities.Entity := JTok.AsValue().AsText();
             jEntityTok.AsObject().Get('text', JTok);

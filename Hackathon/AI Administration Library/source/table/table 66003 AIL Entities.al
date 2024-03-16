@@ -5,11 +5,13 @@ table 66003 "AIL Entities"
 
     fields
     {
-        field(1; Entity; Text[250])
+        field(1; "Entry No."; Integer)
         {
-
         }
-        field(2; Text; Text[250])
+        field(2; Entity; Text[250])
+        {
+        }
+        field(3; Text; Text[250])
         {
 
         }
@@ -17,7 +19,7 @@ table 66003 "AIL Entities"
 
     keys
     {
-        key(Key1; Entity)
+        key(Key1; "Entry No.")
         {
             Clustered = true;
         }
