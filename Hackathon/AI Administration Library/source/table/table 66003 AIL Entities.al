@@ -13,7 +13,6 @@ table 66003 "AIL Entities"
         }
         field(3; Text; Text[250])
         {
-
         }
     }
 

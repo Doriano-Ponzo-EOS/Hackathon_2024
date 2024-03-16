@@ -5,6 +5,8 @@ page 66101 "AIL Copilot EDS Proposal Sub"
     UsageCategory = Lists;
     SourceTable = "AIL Copilot EDS Proposal";
     Caption = 'EDS Proposals';
+    InsertAllowed = false;
+    DeleteAllowed = false;
 
     layout
     {
@@ -25,6 +27,10 @@ page 66101 "AIL Copilot EDS Proposal Sub"
                     ApplicationArea = All;
                 }
                 field(Name; Rec.Description)
+                {
+                    ApplicationArea = All;
+                }
+                field("Creation Date Time"; Rec."Creation Date Time")
                 {
                     ApplicationArea = All;
                 }
