@@ -105,7 +105,10 @@ page 66150 "AIL Copilot CDW Proposal"
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     begin
         if CloseAction = CloseAction::OK then begin
-            CurrPage.SubsProposalSub.Page.ProposeCDWJournal();
+            case Intent of
+                Intent::cdwPrepare:
+                    CurrPage.SubsProposalSub.Page.ImportCDWLines();
+            end;
         end;
     end;
 
