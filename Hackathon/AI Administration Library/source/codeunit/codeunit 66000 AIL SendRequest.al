@@ -90,14 +90,19 @@ codeunit 66000 "AIL SendRequest"
         JArray: JsonArray;
         jEntityTok: JsonToken;
         Intents: List of [Text];
+        OrdinalValue: Integer;
+        Index: Integer;
+        LevelName: Text;
+
     begin
         JObj.ReadFrom(ResponseTxt);
-        JObj.Get('result', JTok);
-        JTok.SelectToken('$.result.prediction.topIntent', JTopIntent);
-        JTok.SelectToken('$.result.prediction.entities', JEntities);
+        JObj.SelectToken('$.result.prediction.topIntent', JTopIntent);
+        JObj.SelectToken('$.result.prediction.entities', JEntities);
 
         TopIntentTxt := JTopIntent.AsValue().AsText();
-        TopIntent := Enum::"AIL Intent".FromInteger("AIL Intent".Ordinals.Get("AIL Intent".Names.IndexOf(TopIntentTxt)));
+        Index := "AIL Intent".Names.IndexOf(TopIntentTxt);
+        OrdinalValue := "AIL Intent".Ordinals.Get(Index);
+        TopIntent := Enum::"AIL Intent".FromInteger(OrdinalValue);
 
         JArray := JEntities.AsArray();
         foreach jEntityTok in JArray do begin
