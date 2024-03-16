@@ -26,7 +26,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
     var
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
-        TmpXmlBuffer: Record "XML Buffer" temporary;
+        AILEntities: Record "AIL Entities";
         TempBlob: Codeunit "Temp Blob";
         InStr: InStream;
         OutStr: OutStream;
@@ -35,7 +35,7 @@ codeunit 66100 "AIL Generate EDS Proposal"
         TmpText: Text;
     begin
         TempBlob.CreateOutStream(OutStr);
-        TmpText := Chat(UserPrompt);
+        TmpText := Chat(UserPrompt, Intent, AILEntities);
         OutStr.WriteText(TmpText);
         TempBlob.CreateInStream(InStr);
 
@@ -84,41 +84,16 @@ codeunit 66100 "AIL Generate EDS Proposal"
         end;
     end;
 
-    procedure Chat(ChatUserPrompt: Text): Text
+    procedure Chat(ChatUserPrompt: Text; var AILEntities: Record "AIL Entities")
     var
-        AzureOpenAI: Codeunit "Azure OpenAI";
-        EnvironmentInformation: Codeunit "Environment Information";
-        AOAIOperationResponse: Codeunit "AOAI Operation Response";
-        AOAIChatCompletionParams: Codeunit "AOAI Chat Completion Params";
-        AOAIChatMessages: Codeunit "AOAI Chat Messages";
-        //IsolatedStorageWrapper: Codeunit "Isolated Storage Wrapper";
+        AILSendRequest: Codeunit "AIL SendRequest";
         Result: Text;
         EntityTextModuleInfo: ModuleInfo;
     begin
-        // These funtions in the "Azure Open AI" codeunit will be available in Business Central online later this year.
-        // You will need to use your own key for Azure OpenAI for all your Copilot features (for both development and production).
-        /*AzureOpenAI.SetAuthorization(Enum::"AOAI Model Type"::"Chat Completions", IsolatedStorageWrapper.GetEndpoint(), IsolatedStorageWrapper.GetDeployment(), IsolatedStorageWrapper.GetSecretKey());
+        AILEntities.Reset();
+        AILEntities.DeleteAll();
 
-        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::"Find Item Substitutions");
-
-        AOAIChatCompletionParams.SetMaxTokens(2500);
-        AOAIChatCompletionParams.SetTemperature(0);
-
-        AOAIChatMessages.AddSystemMessage(ChatSystemPrompt);
-        AOAIChatMessages.AddUserMessage(ChatUserPrompt);
-
-        AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
-
-        if AOAIOperationResponse.IsSuccess() then
-            Result := AOAIChatMessages.GetLastMessage()
-        else
-            Error(AOAIOperationResponse.GetError());
-
-        Result := Result.Replace('&', '&amp;');
-        Result := Result.Replace('"', '');
-        Result := Result.Replace('''', '');*/
-
-        exit(Result);
+        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities);
     end;
 
     var
