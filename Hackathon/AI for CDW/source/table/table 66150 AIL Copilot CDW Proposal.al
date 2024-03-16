@@ -15,14 +15,39 @@ table 66150 "AIL Copilot CDW Proposal"
             Caption = 'System ID';
             Editable = false;
         }
-        field(5; "Code"; Code[20])
+        field(5; "Document No."; Code[20])
         {
-            Caption = 'Code';
+            Caption = 'Document No.';
             Editable = false;
         }
-        field(6; "Description"; Text[100])
+        field(6; "Posting Date"; Date)
+        {
+            Caption = 'Posting Date';
+            Editable = false;
+        }
+        field(7; "Document Date"; Date)
+        {
+            Caption = 'Document Date';
+            Editable = false;
+        }
+        field(8; "No."; Code[20])
+        {
+            Caption = 'Source No.';
+            Editable = false;
+        }
+        field(9; "Description"; Text[250])
         {
             Caption = 'Description';
+            Editable = false;
+        }
+        field(10; "Quantity"; Decimal)
+        {
+            Caption = 'Quantity';
+            Editable = false;
+        }
+        field(11; "Reason Code"; Code[10])
+        {
+            Caption = 'Reason Code';
             Editable = false;
         }
         field(22; Select; Boolean)
