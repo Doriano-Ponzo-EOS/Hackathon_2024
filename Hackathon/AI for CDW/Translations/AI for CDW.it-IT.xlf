@@ -75,6 +75,10 @@
           <source>Description</source>
           <target>Descrizione</target>
         </trans-unit>
+        <trans-unit id="TableExtension 4106681218 - Field 3746462434 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>CDW Project Name</source>
+          <target>Nome del progetto CDW</target>
+        </trans-unit>
       </group>
     </body>
   </file>

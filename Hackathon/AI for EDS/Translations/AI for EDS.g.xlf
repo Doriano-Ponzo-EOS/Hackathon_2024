@@ -113,6 +113,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AIL PageExt66101 - Action AILSuggestEDSwithCopilot - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3846944949 - Field 229539232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2476498112">
+          <source>EDS Project Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AIL TabExt66100 - Field AIL EDS Project Name - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>

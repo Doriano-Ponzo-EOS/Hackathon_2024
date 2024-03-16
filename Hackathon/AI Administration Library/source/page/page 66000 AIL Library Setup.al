@@ -60,7 +60,7 @@ page 66000 "AIL Library Setup"
                     TopIntent: Enum "AIL Intent";
                     TempAILEntities: Record "AIL Entities";
                 begin
-                    AILAPICall.SendLSRequest('Porta in stato chiuso ordine 15000', TopIntent, TempAILEntities);
+                    AILAPICall.SendLSRequest('Porta in stato chiuso ordine 15000', TopIntent, TempAILEntities, Rec."Project Name");
                     Message('%1');
                     TempAILEntities.FindSet();
                     repeat
