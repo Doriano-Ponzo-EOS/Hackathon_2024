@@ -3,139 +3,139 @@
   <file datatype="xml" source-language="en-US" target-language="it-IT">
     <body>
       <group id="body">
-        <trans-unit id="Codeunit 1264012787 - Method 4056382217 - NamedType 4210818894" translate="yes" size-unit="char" xml:space="preserve">
-          <source>{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}</source>
-          <target>{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}</target>
-        </trans-unit>
-        <trans-unit id="Enum 3542221276 - EnumValue 1371923692 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Enum 772762035 - EnumValue 1371923692 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source> </source>
           <target> </target>
         </trans-unit>
-        <trans-unit id="Enum 3542221276 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Enum 772762035 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Intents</source>
           <target>Intents</target>
         </trans-unit>
-        <trans-unit id="Page 1912312219 - Action 209589697 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Suggest with AI</source>
-          <target>Suggerisci con AI</target>
-        </trans-unit>
-        <trans-unit id="Page 1912312219 - Control 3910103502 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Intent</source>
-          <target>Intent</target>
-        </trans-unit>
-        <trans-unit id="Page 1912312219 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Utterance Worksheet</source>
-          <target>Utterance Worksheet</target>
-        </trans-unit>
-        <trans-unit id="Page 2476498112 - Action 1352550224 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 3002154783 - Action 1352550224 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
           <source>Test API Call</source>
           <target>Chiamata API di test</target>
         </trans-unit>
-        <trans-unit id="Page 2476498112 - Control 177661602 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 3002154783 - Control 177661602 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
           <source>Specifies the value of the Deployment Name field.</source>
           <target>Specifica il valore del campo Nome distribuzione.</target>
         </trans-unit>
-        <trans-unit id="Page 2476498112 - Control 2445482498 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 3002154783 - Control 2445482498 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>General</source>
           <target>Generale</target>
         </trans-unit>
-        <trans-unit id="Page 2476498112 - Control 3687300662 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Specifies the value of the API Version field.</source>
-          <target>Specifica il valore del campo Versione API.</target>
-        </trans-unit>
-        <trans-unit id="Page 2476498112 - Control 4040426973 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Specifies the value of the Subscription field.</source>
-          <target>Specifica il valore del campo Sottoscrizione.</target>
-        </trans-unit>
-        <trans-unit id="Page 2476498112 - Control 496600737 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 3002154783 - Control 3057723658 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
           <source>Specifies the value of the EAI Endpoint field.</source>
           <target>Specifica il valore del campo Endpoint EAI.</target>
         </trans-unit>
-        <trans-unit id="Page 2476498112 - Control 904306078 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 3002154783 - Control 3687300662 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the API Version field.</source>
+          <target>Specifica il valore del campo Versione API.</target>
+        </trans-unit>
+        <trans-unit id="Page 3002154783 - Control 4040426973 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Specifies the value of the Subscription field.</source>
+          <target>Specifica il valore del campo Sottoscrizione.</target>
+        </trans-unit>
+        <trans-unit id="Page 3002154783 - Control 904306078 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
           <source>Specifies the value of the Project Name field.</source>
           <target>Specifica il valore del campo Nome progetto.</target>
         </trans-unit>
-        <trans-unit id="Page 2476498112 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 3002154783 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>AI Library Setup (EAI)</source>
           <target>Setup AI Library (EAI)</target>
         </trans-unit>
-        <trans-unit id="Table 1912312219 - Field 1261348325 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Utterance</source>
-          <target>Utterance</target>
+        <trans-unit id="Page 4220620700 - Action 209589697 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest with AI</source>
+          <target>Suggerisci con AI</target>
         </trans-unit>
-        <trans-unit id="Table 1912312219 - Field 1787696736 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 4220620700 - Action 2302823461 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Train data</source>
+          <target>Allena modello</target>
+        </trans-unit>
+        <trans-unit id="Page 4220620700 - Control 3910103502 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Intent</source>
           <target>Intent</target>
         </trans-unit>
-        <trans-unit id="Table 1912312219 - Field 883711285 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Entry No.</source>
-          <target>Nr. movimento</target>
-        </trans-unit>
-        <trans-unit id="Table 1912312219 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 4220620700 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Utterance Worksheet</source>
           <target>Utterance Worksheet</target>
         </trans-unit>
-        <trans-unit id="Table 2476498112 - Field 1663593181 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3002154783 - Field 1663593181 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Primary Key</source>
           <target>Chiave primaria</target>
         </trans-unit>
-        <trans-unit id="Table 2476498112 - Field 177661602 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3002154783 - Field 177661602 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Deployment Name</source>
           <target>Nome distribuzione</target>
         </trans-unit>
-        <trans-unit id="Table 2476498112 - Field 3687300662 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>API Version</source>
-          <target>Versione API</target>
-        </trans-unit>
-        <trans-unit id="Table 2476498112 - Field 496600737 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3002154783 - Field 3057723658 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>EAI Endpoint</source>
           <target>EAI Endpoint</target>
         </trans-unit>
-        <trans-unit id="Table 2476498112 - Field 736487848 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3002154783 - Field 3687300662 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>API Version</source>
+          <target>Versione API</target>
+        </trans-unit>
+        <trans-unit id="Table 3002154783 - Field 736487848 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Subscription Key</source>
           <target>Chiave di sottoscrizione</target>
         </trans-unit>
-        <trans-unit id="Table 2476498112 - Field 904306078 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3002154783 - Field 904306078 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Project Name</source>
           <target>Nome del progetto</target>
         </trans-unit>
-        <trans-unit id="Table 2476498112 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3002154783 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>AI Library Setup</source>
           <target>Setup AI Library</target>
         </trans-unit>
-        <trans-unit id="Table 248550859 - Field 1821279055 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3867298164 - Field 1821279055 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Text</source>
           <target>Testo</target>
         </trans-unit>
-        <trans-unit id="Table 248550859 - Field 2110632758 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3867298164 - Field 2110632758 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>From Date</source>
           <target>Da data</target>
         </trans-unit>
-        <trans-unit id="Table 248550859 - Field 2565971985 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3867298164 - Field 2565971985 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>To Date</source>
           <target>A data</target>
         </trans-unit>
-        <trans-unit id="Table 248550859 - Field 3247369565 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3867298164 - Field 3247369565 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Entity</source>
           <target>Entità</target>
         </trans-unit>
-        <trans-unit id="Table 248550859 - Field 883711285 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3867298164 - Field 883711285 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Entry No.</source>
           <target>Nr. movimento</target>
         </trans-unit>
-        <trans-unit id="Table 248550859 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 3867298164 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>EAI Entities</source>
           <target>Entità EAI</target>
         </trans-unit>
-        <trans-unit id="Table 935861405 - Field 1814968387 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4220620700 - Field 1261348325 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Utterance</source>
+          <target>Utterance</target>
+        </trans-unit>
+        <trans-unit id="Table 4220620700 - Field 1787696736 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Intent</source>
+          <target>Intent</target>
+        </trans-unit>
+        <trans-unit id="Table 4220620700 - Field 883711285 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>Nr. movimento</target>
+        </trans-unit>
+        <trans-unit id="Table 4220620700 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Utterance Worksheet</source>
+          <target>Utterance Worksheet</target>
+        </trans-unit>
+        <trans-unit id="Table 4245521142 - Field 1814968387 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Intent ID</source>
           <target>ID intent</target>
         </trans-unit>
-        <trans-unit id="Table 935861405 - Field 2812679574 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4245521142 - Field 2812679574 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Intent Description</source>
           <target>Descrizione intent</target>
         </trans-unit>
-        <trans-unit id="Table 935861405 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4245521142 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Intent Selection</source>
           <target>Selezione intent</target>
         </trans-unit>

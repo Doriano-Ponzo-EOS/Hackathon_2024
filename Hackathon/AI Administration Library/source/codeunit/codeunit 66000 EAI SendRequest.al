@@ -17,7 +17,7 @@ codeunit 66000 "EAI SendRequest"
     local procedure GetRequestBody(Question: Text; ProjectName: Text) requestBody: Text
     var
         EAISetup: Record "EAI Library Setup";
-        JsonDataSrc: Label '{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}';
+        JsonDataSrc: Label '{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}', Locked = true;
     begin
         EAISetup.Get();
         requestBody := JsonDataSrc;

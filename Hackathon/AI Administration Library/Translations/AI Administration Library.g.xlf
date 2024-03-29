@@ -103,11 +103,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table EAI Utterance Worksheet - Field Utterance - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1196034580 - Method 4056382217 - NamedType 4210818894" size-unit="char" translate="yes" xml:space="preserve">
-          <source>{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EAI SendRequest - Method GetRequestBody - NamedType JsonDataSrc</note>
-        </trans-unit>
         <trans-unit id="Page 3002154783 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AI Library Setup (EAI)</source>
           <note from="Developer" annotates="general" priority="2"></note>
