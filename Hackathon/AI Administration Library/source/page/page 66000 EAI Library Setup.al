@@ -1,10 +1,10 @@
-page 66000 "AIL Library Setup"
+page 66000 "EAI Library Setup"
 {
-    Caption = 'AI Library Setup (AIL)';
+    Caption = 'AI Library Setup (EAI)';
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "AIL Library Setup";
+    SourceTable = "EAI Library Setup";
 
     layout
     {
@@ -14,10 +14,10 @@ page 66000 "AIL Library Setup"
             {
                 Caption = 'General';
 
-                field("AIL Endpoint"; Rec."AIL Endpoint")
+                field("EAI Endpoint"; Rec."EAI Endpoint")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the AIL Endpoint field.';
+                    ToolTip = 'Specifies the value of the EAI Endpoint field.';
                 }
                 field(Subscription; Rec.SubscriptionKey)
                 {
@@ -56,16 +56,16 @@ page 66000 "AIL Library Setup"
 
                 trigger OnAction()
                 var
-                    AILAPICall: Codeunit "AIL SendRequest";
-                    TopIntent: Enum "AIL Intent";
-                    TempAILEntities: Record "AIL Entities";
+                    EAIAPICall: Codeunit "EAI SendRequest";
+                    TopIntent: Enum "EAI Intent";
+                    TempEAIEntities: Record "EAI Entities";
                 begin
-                    AILAPICall.SendLSRequest('Porta in stato chiuso ordine 15000', TopIntent, TempAILEntities, Rec."Project Name");
+                    EAIAPICall.SendLSRequest('Porta in stato chiuso ordine 15000', TopIntent, TempEAIEntities, Rec."Project Name");
                     Message('%1');
-                    TempAILEntities.FindSet();
+                    TempEAIEntities.FindSet();
                     repeat
-                        Message('%1 - %2', TempAILEntities."Entity", TempAILEntities.Text);
-                    until TempAILEntities.Next() = 0;
+                        Message('%1 - %2', TempEAIEntities."Entity", TempEAIEntities.Text);
+                    until TempEAIEntities.Next() = 0;
                 end;
             }
         }

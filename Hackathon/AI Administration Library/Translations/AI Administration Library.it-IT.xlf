@@ -48,16 +48,16 @@
           <target>Specifica il valore del campo Sottoscrizione.</target>
         </trans-unit>
         <trans-unit id="Page 2476498112 - Control 496600737 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Specifies the value of the AIL Endpoint field.</source>
-          <target>Specifica il valore del campo Endpoint AIL.</target>
+          <source>Specifies the value of the EAI Endpoint field.</source>
+          <target>Specifica il valore del campo Endpoint EAI.</target>
         </trans-unit>
         <trans-unit id="Page 2476498112 - Control 904306078 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
           <source>Specifies the value of the Project Name field.</source>
           <target>Specifica il valore del campo Nome progetto.</target>
         </trans-unit>
         <trans-unit id="Page 2476498112 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>AI Library Setup (AIL)</source>
-          <target>Setup AI Library (AIL)</target>
+          <source>AI Library Setup (EAI)</source>
+          <target>Setup AI Library (EAI)</target>
         </trans-unit>
         <trans-unit id="Table 1912312219 - Field 1261348325 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Utterance</source>
@@ -88,8 +88,8 @@
           <target>Versione API</target>
         </trans-unit>
         <trans-unit id="Table 2476498112 - Field 496600737 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>AIL Endpoint</source>
-          <target>AIL Endpoint</target>
+          <source>EAI Endpoint</source>
+          <target>EAI Endpoint</target>
         </trans-unit>
         <trans-unit id="Table 2476498112 - Field 736487848 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Subscription Key</source>
@@ -124,8 +124,8 @@
           <target>Nr. movimento</target>
         </trans-unit>
         <trans-unit id="Table 248550859 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>AIL Entities</source>
-          <target>Entità AIL</target>
+          <source>EAI Entities</source>
+          <target>Entità EAI</target>
         </trans-unit>
         <trans-unit id="Table 935861405 - Field 1814968387 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Intent ID</source>

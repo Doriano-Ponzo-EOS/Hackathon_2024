@@ -1,4 +1,4 @@
-table 66001 "AIL Utterance Worksheet"
+table 66001 "EAI Utterance Worksheet"
 {
     DataClassification = CustomerContent;
     Caption = 'Utterance Worksheet';
@@ -11,7 +11,7 @@ table 66001 "AIL Utterance Worksheet"
             Caption = 'Entry No.';
             AutoIncrement = true;
         }
-        field(2; Intent; Enum "AIL Intent")
+        field(2; Intent; Enum "EAI Intent")
         {
             DataClassification = CustomerContent;
             Caption = 'Intent';

@@ -1,4 +1,4 @@
-enum 66000 "AIL Intent"
+enum 66000 "EAI Intent"
 {
     Extensible = true;
     Caption = 'Intents';
