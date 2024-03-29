@@ -33,6 +33,7 @@ page 66150 "EAI Copilot CDW Proposal"
             {
                 Editable = false;
                 ShowCaption = false;
+                ApplicationArea = All;
             }
             field(ChatRequest; ChatRequest)
             {
