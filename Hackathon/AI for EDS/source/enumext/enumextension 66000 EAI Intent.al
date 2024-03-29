@@ -1,4 +1,4 @@
-enumextension 66100 "AIL EnumExt66100" extends "AIL Intent" //66000
+enumextension 66100 "EAI EnumExt66100" extends "EAI Intent" //66000
 {
     value(66100; "edsChange")
     {

@@ -1,5 +1,5 @@
 
-table 66100 "AIL Copilot EDS Proposal"
+table 66100 "EAI Copilot EDS Proposal"
 {
     TableType = Temporary;
 

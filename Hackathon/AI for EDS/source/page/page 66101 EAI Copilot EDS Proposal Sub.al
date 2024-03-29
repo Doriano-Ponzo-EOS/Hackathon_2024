@@ -1,9 +1,9 @@
-page 66101 "AIL Copilot EDS Proposal Sub"
+page 66101 "EAI Copilot EDS Proposal Sub"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "AIL Copilot EDS Proposal";
+    SourceTable = "EAI Copilot EDS Proposal";
     Caption = 'EDS Proposals';
     InsertAllowed = false;
     DeleteAllowed = false;
@@ -12,7 +12,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
     {
         area(Content)
         {
-            repeater(EDSDetails)
+            repeater(EDSDetEAIs)
             {
                 Caption = ' ';
                 ShowCaption = false;
@@ -48,7 +48,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
     }
 
 
-    procedure Load(var TmpEDSAIProposal: Record "AIL Copilot EDS Proposal"; Intent2: Enum "AIL Intent")
+    procedure Load(var TmpEDSAIProposal: Record "EAI Copilot EDS Proposal"; Intent2: Enum "EAI Intent")
     begin
         Rec.Reset();
         Rec.DeleteAll();
@@ -67,7 +67,7 @@ page 66101 "AIL Copilot EDS Proposal Sub"
 
     procedure ChangeEDSStatus()
     var
-        EDSAIProposal2: Record "AIL Copilot EDS Proposal";
+        EDSAIProposal2: Record "EAI Copilot EDS Proposal";
         DSMgt: Codeunit "EOS DS Management";
         RecRef: RecordRef;
     begin
@@ -85,5 +85,5 @@ page 66101 "AIL Copilot EDS Proposal Sub"
     end;
 
     var
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
 }

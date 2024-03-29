@@ -1,4 +1,4 @@
-page 66100 "AIL Copilot EDS Proposal"
+page 66100 "EAI Copilot EDS Proposal"
 {
     PageType = PromptDialog;
     Extensible = false;
@@ -33,6 +33,7 @@ page 66100 "AIL Copilot EDS Proposal"
             {
                 Editable = false;
                 ShowCaption = false;
+                ApplicationArea = All;
             }
             field(ChatRequest; ChatRequest)
             {
@@ -52,7 +53,7 @@ page 66100 "AIL Copilot EDS Proposal"
         // show the user the suggestion that your Copilot feature generated.
         area(Content)
         {
-            part(SubsProposalSub; "AIL Copilot EDS Proposal Sub")
+            part(SubsProposalSub; "EAI Copilot EDS Proposal Sub")
             {
                 ApplicationArea = All;
             }
@@ -151,7 +152,7 @@ page 66100 "AIL Copilot EDS Proposal"
         DocumentType := DocumentType2;
     end;
 
-    procedure Load(var TmpEDSProposal: Record "AIL Copilot EDS Proposal" temporary)
+    procedure Load(var TmpEDSProposal: Record "EAI Copilot EDS Proposal" temporary)
     begin
         CurrPage.SubsProposalSub.Page.Load(TmpEDSProposal, Intent);
         CurrPage.Update(false);
@@ -160,9 +161,9 @@ page 66100 "AIL Copilot EDS Proposal"
     var
         TableID: Integer;
         DocumentType: Integer;
-        Intent: Enum "AIL Intent";
-        TmpEDSAIProposal: Record "AIL Copilot EDS Proposal" temporary;
-        GenEDSProposal: Codeunit "AIL Generate EDS Proposal";
+        Intent: Enum "EAI Intent";
+        TmpEDSAIProposal: Record "EAI Copilot EDS Proposal" temporary;
+        GenEDSProposal: Codeunit "EAI Generate EDS Proposal";
         Text001Lbl: Label 'Suggest EDS changes with Copilot';
         Text002Lbl: Label 'Request table to inspect or propose change status. Example: Close all open sales orders not modified since 3 days';
         Text003Err: Label 'Something went wrong. Please try again. ';

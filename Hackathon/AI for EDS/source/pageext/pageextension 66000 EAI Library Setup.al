@@ -1,4 +1,4 @@
-pageextension 66102 "AIL PagExt66102" extends "AIL Library Setup"   //66000
+pageextension 66102 "EAI PagExt66102" extends "EAI Library Setup"   //66000
 {
     layout
     {
@@ -6,7 +6,7 @@ pageextension 66102 "AIL PagExt66102" extends "AIL Library Setup"   //66000
         {
             group(EDS)
             {
-                field("AIL EDS LS Model"; Rec."AIL EDS Project Name")
+                field("EAI EDS LS Model"; Rec."EAI EDS Project Name")
                 {
                     ApplicationArea = All;
                 }
