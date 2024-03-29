@@ -1,4 +1,4 @@
-page 66150 "AIL Copilot CDW Proposal"
+page 66150 "EAI Copilot CDW Proposal"
 {
     PageType = PromptDialog;
     Extensible = false;
@@ -52,7 +52,7 @@ page 66150 "AIL Copilot CDW Proposal"
         // show the user the suggestion that your Copilot feature generated.
         area(Content)
         {
-            part(SubsProposalSub; "AIL Copilot CDW Proposal Sub")
+            part(SubsProposalSub; "EAI Copilot CDW Proposal Sub")
             {
                 ApplicationArea = All;
             }
@@ -143,18 +143,18 @@ page 66150 "AIL Copilot CDW Proposal"
         CDWJournalLine.Copy(CDWJournalLine2);
     end;
 
-    procedure Load(var TmpCDWProposal: Record "AIL Copilot CDW Proposal" temporary)
+    procedure Load(var TmpCDWProposal: Record "EAI Copilot CDW Proposal" temporary)
     begin
         CurrPage.SubsProposalSub.Page.Load(TmpCDWProposal, Intent);
         CurrPage.Update(false);
     end;
 
     var
-        TmpCDWAIProposal: Record "AIL Copilot CDW Proposal" temporary;
+        TmpCDWAIProposal: Record "EAI Copilot CDW Proposal" temporary;
         CDWJournalLine: Record "EOS041 CDW Journal Line";
-        GenCDWProposal: Codeunit "AIL Generate CDW Proposal";
+        GenCDWProposal: Codeunit "EAI Generate CDW Proposal";
         TableID: Integer;
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
         Text001Lbl: Label 'Suggest CDW changes with Copilot';
         Text002Lbl: Label 'Request documents to close without invoicing. Example: Close all shipments of customer Spotsmeyer''s Furnishings';
         Text003Err: Label 'Something went wrong. Please try again. ';

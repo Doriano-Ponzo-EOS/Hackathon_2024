@@ -1,10 +1,10 @@
-pageextension 66150 "AIL PageExt66101" extends "EOS041 CDW Journal" //18090668
+pageextension 66150 "EAI PageExt66101" extends "EOS041 CDW Journal" //18090668
 {
     actions
     {
         addLast(Processing)
         {
-            action(AILSuggestCDWwithCopilot)
+            action(EAISuggestCDWwithCopilot)
             {
                 Caption = 'Suggest with Copilot';
                 Image = Sparkle;
@@ -18,7 +18,7 @@ pageextension 66150 "AIL PageExt66101" extends "EOS041 CDW Journal" //18090668
         }
         addlast(Category_Process)
         {
-            actionref(AILSuggestCDWwithCopilot_Promoted; AILSuggestCDWwithCopilot)
+            actionref(EAISuggestCDWwithCopilot_Promoted; EAISuggestCDWwithCopilot)
             {
             }
         }
@@ -27,7 +27,7 @@ pageextension 66150 "AIL PageExt66101" extends "EOS041 CDW Journal" //18090668
 
     local procedure SuggestEDSChangesWithAI();
     var
-        CopilotEDSProposal: Page "AIL Copilot CDW Proposal";
+        CopilotEDSProposal: Page "EAI Copilot CDW Proposal";
         AzureOpenAI: Codeunit "Azure OpenAI";
     begin
         CopilotEDSProposal.SetSource(Rec);

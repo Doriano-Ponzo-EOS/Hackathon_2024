@@ -1,9 +1,9 @@
-page 66151 "AIL Copilot CDW Proposal Sub"
+page 66151 "EAI Copilot CDW Proposal Sub"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "AIL Copilot CDW Proposal";
+    SourceTable = "EAI Copilot CDW Proposal";
     Caption = 'CDW Proposal';
     InsertAllowed = false;
     DeleteAllowed = false;
@@ -55,7 +55,7 @@ page 66151 "AIL Copilot CDW Proposal Sub"
     }
 
 
-    procedure Load(var TmpCDWAIProposal: Record "AIL Copilot CDW Proposal"; Intent2: Enum "AIL Intent")
+    procedure Load(var TmpCDWAIProposal: Record "EAI Copilot CDW Proposal"; Intent2: Enum "EAI Intent")
     begin
         Rec.Reset();
         Rec.DeleteAll();
@@ -74,7 +74,7 @@ page 66151 "AIL Copilot CDW Proposal Sub"
 
     procedure ProposeCDWJournal()
     var
-        CDWAIProposal2: Record "AIL Copilot CDW Proposal";
+        CDWAIProposal2: Record "EAI Copilot CDW Proposal";
         RecRef: RecordRef;
     begin
         CDWAIProposal2.Copy(Rec, true);
@@ -87,11 +87,11 @@ page 66151 "AIL Copilot CDW Proposal Sub"
     end;
 
     var
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
 
     procedure ImportCDWLines()
     var
-        EDSAIProposal2: Record "AIL Copilot CDW Proposal";
+        EDSAIProposal2: Record "EAI Copilot CDW Proposal";
         EOS041DocumentHandling: Codeunit "EOS041 Document Handling";
         RecRef: RecordRef;
         NextLineNo: Integer;

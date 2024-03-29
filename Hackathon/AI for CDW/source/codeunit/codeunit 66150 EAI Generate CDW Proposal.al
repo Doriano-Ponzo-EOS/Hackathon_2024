@@ -1,4 +1,4 @@
-codeunit 66150 "AIL Generate CDW Proposal"
+codeunit 66150 "EAI Generate CDW Proposal"
 {
     trigger OnRun()
     begin
@@ -15,7 +15,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
         TableID := TableID2;
     end;
 
-    procedure GetResult(var TmpCDWAIProposal2: Record "AIL Copilot CDW Proposal" temporary; var Intent2: Enum "AIL Intent")
+    procedure GetResult(var TmpCDWAIProposal2: Record "EAI Copilot CDW Proposal" temporary; var Intent2: Enum "EAI Intent")
     begin
         TmpCDWAIProposal2.Copy(TmpCDWAIProposal, true);
         Intent2 := Intent;
@@ -25,7 +25,7 @@ codeunit 66150 "AIL Generate CDW Proposal"
     var
         SalesHeader: Record "Sales Header";
         Customer: Record Customer;
-        AILEntities: Record "AIL Entities";
+        EAIEntities: Record "EAI Entities";
         TmpXmlBuffer: Record "XML Buffer" temporary;
         TempDocumentLine: Record "EOS041 CDW Journal Line" temporary;
         TempDocumentLine2: Record "EOS041 CDW Journal Line" temporary;
@@ -43,19 +43,19 @@ codeunit 66150 "AIL Generate CDW Proposal"
         ReasonCode: Code[10];
     begin
         TempBlob.CreateOutStream(OutStr);
-        Chat(UserPrompt, AILEntities);
+        Chat(UserPrompt, EAIEntities);
         OutStr.WriteText(TmpText);
         TempBlob.CreateInStream(InStr);
 
         // filter from AI entities
-        AILEntities.Reset();
-        AILEntities.SetRange(Entity, 'cdw_type');
-        if not AILEntities.FindSet() then
+        EAIEntities.Reset();
+        EAIEntities.SetRange(Entity, 'cdw_type');
+        if not EAIEntities.FindSet() then
             error(newLabel);
 
         Intent := Intent::CDWPrepare;
 
-        case AILEntities.Text of
+        case EAIEntities.Text of
             'Shipment':
                 begin
                     Document := CdwDocument::"Sales Shipment Line";
@@ -65,17 +65,17 @@ codeunit 66150 "AIL Generate CDW Proposal"
 
                     TempDocumentLine.SetCurrentKey("Source Document Type", "Source Document No.", "Source Document Line No.");
 
-                    AILEntities.SetRange(Entity, 'cdw_reason');
-                    AILEntities.FindFirst();
-                    ReasonCode := AILEntities.Text;
+                    EAIEntities.SetRange(Entity, 'cdw_reason');
+                    EAIEntities.FindFirst();
+                    ReasonCode := EAIEntities.Text;
 
-                    AILEntities.SetRange(Entity, 'filter_value');
-                    AILEntities.FindFirst();
+                    EAIEntities.SetRange(Entity, 'filter_value');
+                    EAIEntities.FindFirst();
 
                     TempDocumentLine2.Copy(TempDocumentLine, true);
 
                     TempDocumentLine.SetRange("Source Document Line No.", 0);
-                    TempDocumentLine.SetRange("Sell-To/Buy-From Name", AILEntities.Text);
+                    TempDocumentLine.SetRange("Sell-To/Buy-From Name", EAIEntities.Text);
 
                     if TempDocumentLine.FindSet() then begin
 
@@ -99,27 +99,27 @@ codeunit 66150 "AIL Generate CDW Proposal"
         end;
     end;
 
-    procedure Chat(ChatUserPrompt: Text; var AILEntities: Record "AIL Entities")
+    procedure Chat(ChatUserPrompt: Text; var EAIEntities: Record "EAI Entities")
     var
-        AILLibrarySetup: Record "AIL Library Setup";
-        AILSendRequest: Codeunit "AIL SendRequest";
+        EAILibrarySetup: Record "EAI Library Setup";
+        EAISendRequest: Codeunit "EAI SendRequest";
         Result: Text;
     begin
-        AILLibrarySetup.Get();
-        AILLibrarySetup.TestField("AIL CDW Project Name");
+        EAILibrarySetup.Get();
+        EAILibrarySetup.TestField("EAI CDW Project Name");
 
-        AILEntities.Reset();
-        AILEntities.DeleteAll();
+        EAIEntities.Reset();
+        EAIEntities.DeleteAll();
 
-        AILSendRequest.SendLSRequest(ChatUserPrompt, Intent, AILEntities, AILLibrarySetup."AIL CDW Project Name");
+        EAISendRequest.SendLSRequest(ChatUserPrompt, Intent, EAIEntities, EAILibrarySetup."EAI CDW Project Name");
     end;
 
     var
-        TmpCDWAIProposal: Record "AIL Copilot CDW Proposal" temporary;
+        TmpCDWAIProposal: Record "EAI Copilot CDW Proposal" temporary;
         TableID: Integer;
         DocumentType: Integer;
         UserPrompt: Text;
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
 
 
     local procedure RegroupDocumentLines(var TempDocumentLine: Record "EOS041 CDW Journal Line" temporary)

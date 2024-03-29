@@ -1,4 +1,4 @@
-pageextension 66151 "AIL PagExt66151" extends "AIL Library Setup"   //66000
+pageextension 66151 "EAI PagExt66151" extends "EAI Library Setup"   //66000
 {
     layout
     {
@@ -6,7 +6,7 @@ pageextension 66151 "AIL PagExt66151" extends "AIL Library Setup"   //66000
         {
             group(CDW)
             {
-                field("AIL CDW LS Model"; Rec."AIL CDW Project Name")
+                field("EAI CDW LS Model"; Rec."EAI CDW Project Name")
                 {
                     ApplicationArea = All;
                 }
