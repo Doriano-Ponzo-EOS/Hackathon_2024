@@ -1,9 +1,9 @@
-page 66002 "AIL Utterance Worksheet"
+page 66002 "EAI Utterance Worksheet"
 {
     PageType = Worksheet;
     ApplicationArea = All;
     UsageCategory = Tasks;
-    SourceTable = "AIL Utterance Worksheet";
+    SourceTable = "EAI Utterance Worksheet";
     Caption = 'Utterance Worksheet';
 
     layout
@@ -18,11 +18,11 @@ page 66002 "AIL Utterance Worksheet"
 
                 trigger OnAssistEdit()
                 var
-                    AILIntentSelection: Page "AIL Intent Selection";
+                    EAIIntentSelection: Page "EAI Intent Selection";
                 begin
-                    AILIntentSelection.LookupMode(true);
-                    if AILIntentSelection.RunModal() = Action::LookupOK then
-                        SessionIntent := Enum::"AIL Intent".FromInteger(AILIntentSelection.GetIntent())
+                    EAIIntentSelection.LookupMode(true);
+                    if EAIIntentSelection.RunModal() = Action::LookupOK then
+                        SessionIntent := Enum::"EAI Intent".FromInteger(EAIIntentSelection.GetIntent())
                 end;
             }
 
@@ -70,9 +70,9 @@ page 66002 "AIL Utterance Worksheet"
     end;
 
     var
-        SessionIntent: Enum "AIL Intent";
+        SessionIntent: Enum "EAI Intent";
 
-    procedure SetIntent(IntentParameter: Enum "AIL Intent")
+    procedure SetIntent(IntentParameter: Enum "EAI Intent")
     begin
         SessionIntent := IntentParameter;
     end;

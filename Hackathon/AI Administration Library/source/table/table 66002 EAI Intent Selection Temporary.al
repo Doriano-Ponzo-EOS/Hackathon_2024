@@ -1,4 +1,4 @@
-table 66002 "AIL Intent Selection Temporary"
+table 66002 "EAI Intent Selection Temporary"
 {
     DataClassification = CustomerContent;
     Caption = 'Intent Selection';

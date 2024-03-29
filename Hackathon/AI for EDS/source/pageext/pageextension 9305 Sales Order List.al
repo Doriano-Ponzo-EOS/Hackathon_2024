@@ -1,10 +1,10 @@
-pageextension 66100 "AIL PageExt66100" extends "Sales Order List" //9305
+pageextension 66100 "EAI PageExt66100" extends "Sales Order List" //9305
 {
     actions
     {
         addLast("F&unctions")
         {
-            action(AILSuggestEDSwithCopilot)
+            action(EAISuggestEDSwithCopilot)
             {
                 Caption = 'Suggest EDS with Copilot';
                 Image = Sparkle;
@@ -18,7 +18,7 @@ pageextension 66100 "AIL PageExt66100" extends "Sales Order List" //9305
         }
         addlast(Category_Process)
         {
-            actionref(AILSuggestEDSwithCopilot_Promoted; AILSuggestEDSwithCopilot)
+            actionref(EAISuggestEDSwithCopilot_Promoted; EAISuggestEDSwithCopilot)
             {
             }
         }
@@ -27,7 +27,7 @@ pageextension 66100 "AIL PageExt66100" extends "Sales Order List" //9305
 
     local procedure SuggestEDSChangesWithAI();
     var
-        CopilotEDSProposal: Page "AIL Copilot EDS Proposal";
+        CopilotEDSProposal: Page "EAI Copilot EDS Proposal";
         AzureOpenAI: Codeunit "Azure OpenAI";
     begin
         CopilotEDSProposal.SetEDSKey(Database::"Sales Header", Rec."Document Type".AsInteger());

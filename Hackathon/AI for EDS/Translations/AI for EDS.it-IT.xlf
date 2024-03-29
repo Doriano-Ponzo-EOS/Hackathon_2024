@@ -3,95 +3,95 @@
   <file datatype="xml" source-language="en-US" target-language="it-IT">
     <body>
       <group id="body">
-        <trans-unit id="Page 1430685156 - Action 2079045816 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Confirm</source>
-          <target>Conferma</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - Action 2388911040 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Regenerate EDS proposal with Dynamics 365 Copilot.</source>
-          <target>Rigenera proposte EDS con Dynamics 365 Copilot.</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - Action 2388911040 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Regenerate</source>
-          <target>Rigenera</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - Action 2626368477 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Generate EDS proposal with Dynamics 365 Copilot.</source>
-          <target>Genera proposte EDS con Dynamics 365 Copilot.</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - Action 2626368477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Generate</source>
-          <target>Genera</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - Action 788258546 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Discard</source>
-          <target>Ignora</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - NamedType 1196336482" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Suggest EDS changes with Copilot</source>
-          <target>Suggerisci proposte EDS con Copilot</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - NamedType 1753513791" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Request table to inspect or propose change status. Example: Close all open sales orders not modified since 3 days</source>
-          <target>Richiedi tabelle da analizzare o proporre cambi stato. Esempio: Chiudi tutti gli ordini di vendita aperti non modificati da 3 giorni.</target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - NamedType 672156893" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Something went wrong. Please try again. </source>
-          <target>Qualcosa è andato storto. Riprovare. </target>
-        </trans-unit>
-        <trans-unit id="Page 1430685156 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Suggest EDS with Copilot</source>
-          <target>Suggerisci proposte EDS con Copilot</target>
-        </trans-unit>
-        <trans-unit id="Page 2543418552 - Control 413864260 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 2254220399 - Control 743325851 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source> </source>
           <target> </target>
         </trans-unit>
-        <trans-unit id="Page 2543418552 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 2254220399 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>EDS Proposals</source>
           <target>Proposte EDS</target>
         </trans-unit>
-        <trans-unit id="PageExtension 3039624089 - Action 3041658326 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Suggest EDS with Copilot</source>
-          <target>Suggerisci EDS con Copilot</target>
+        <trans-unit id="Page 4196620619 - Action 2079045816 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Confirm</source>
+          <target>Conferma</target>
         </trans-unit>
-        <trans-unit id="PageExtension 3677320706 - Action 3041658326 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
-          <source>Suggest EDS with Copilot</source>
-          <target>Suggerisci EDS con Copilot</target>
+        <trans-unit id="Page 4196620619 - Action 2388911040 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Regenerate EDS proposal with Dynamics 365 Copilot.</source>
+          <target>Rigenera proposte EDS con Dynamics 365 Copilot.</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 1431358970 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Page 4196620619 - Action 2388911040 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Regenerate</source>
+          <target>Rigenera</target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - Action 2626368477 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Generate EDS proposal with Dynamics 365 Copilot.</source>
+          <target>Genera proposte EDS con Dynamics 365 Copilot.</target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - Action 2626368477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Generate</source>
+          <target>Genera</target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - Action 788258546 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Discard</source>
+          <target>Ignora</target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - NamedType 1196336482" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest EDS changes with Copilot</source>
+          <target>Suggerisci proposte EDS con Copilot</target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - NamedType 1753513791" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Request table to inspect or propose change status. Example: Close all open sales orders not modified since 3 days</source>
+          <target>Richiedi tabelle da analizzare o proporre cambi stato. Esempio: Chiudi tutti gli ordini di vendita aperti non modificati da 3 giorni.</target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - NamedType 672156893" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Something went wrong. Please try again. </source>
+          <target>Qualcosa è andato storto. Riprovare. </target>
+        </trans-unit>
+        <trans-unit id="Page 4196620619 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest EDS with Copilot</source>
+          <target>Suggerisci proposte EDS con Copilot</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 1976162777 - Action 431569357 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest EDS with Copilot</source>
+          <target>Suggerisci proposte EDS con Copilot</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 2613859394 - Action 431569357 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Suggest EDS with Copilot</source>
+          <target>Suggerisci proposte EDS con Copilot</target>
+        </trans-unit>
+        <trans-unit id="Table 4196620619 - Field 1431358970 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>EDS Status</source>
           <target>Stato EDS</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 2004648782 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 2004648782 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>New EDS Status</source>
           <target>Nuovo stato EDS</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3004954119 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 3004954119 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Code</source>
           <target>Codice</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3076185996 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 3076185996 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>System ID</source>
           <target>System ID</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3117446396 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 3117446396 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Select</source>
           <target>Seleziona</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3135334477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 3135334477 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Table ID</source>
           <target>ID tabella</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3192175264 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 3192175264 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Date</source>
           <target>Data</target>
         </trans-unit>
-        <trans-unit id="Table 1430685156 - Field 3461834954 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="Table 4196620619 - Field 3461834954 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>Description</source>
           <target>Descrizione</target>
         </trans-unit>
-        <trans-unit id="TableExtension 3846944949 - Field 229539232 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+        <trans-unit id="TableExtension 3987724086 - Field 3000542071 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
           <source>EDS Project Name</source>
           <target>Nome del progetto EDS</target>
         </trans-unit>

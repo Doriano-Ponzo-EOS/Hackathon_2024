@@ -1,4 +1,4 @@
-codeunit 66001 "AIL Functions"
+codeunit 66001 "EAI Functions"
 {
     trigger OnRun()
     begin

@@ -1,10 +1,10 @@
-pageextension 66101 "AIL PageExt66101" extends "Customer List" //22
+pageextension 66101 "EAI PageExt66101" extends "Customer List" //22
 {
     actions
     {
         addLast("&Customer")
         {
-            action(AILSuggestEDSwithCopilot)
+            action(EAISuggestEDSwithCopilot)
             {
                 Caption = 'Suggest EDS with Copilot';
                 Image = Sparkle;
@@ -18,7 +18,7 @@ pageextension 66101 "AIL PageExt66101" extends "Customer List" //22
         }
         addlast(Category_Process)
         {
-            actionref(AILSuggestEDSwithCopilot_Promoted; AILSuggestEDSwithCopilot)
+            actionref(EAISuggestEDSwithCopilot_Promoted; EAISuggestEDSwithCopilot)
             {
             }
         }
@@ -27,7 +27,7 @@ pageextension 66101 "AIL PageExt66101" extends "Customer List" //22
 
     local procedure SuggestEDSChangesWithAI();
     var
-        CopilotEDSProposal: Page "AIL Copilot EDS Proposal";
+        CopilotEDSProposal: Page "EAI Copilot EDS Proposal";
         AzureOpenAI: Codeunit "Azure OpenAI";
     begin
         CopilotEDSProposal.SetEDSKey(Database::"Customer");

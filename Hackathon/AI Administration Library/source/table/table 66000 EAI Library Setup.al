@@ -1,4 +1,4 @@
-table 66000 "AIL Library Setup"
+table 66000 "EAI Library Setup"
 {
     Caption = 'AI Library Setup';
     DataClassification = CustomerContent;
@@ -9,9 +9,9 @@ table 66000 "AIL Library Setup"
         {
             Caption = 'Primary Key';
         }
-        field(2; "AIL Endpoint"; Text[250])
+        field(2; "EAI Endpoint"; Text[250])
         {
-            Caption = 'AIL Endpoint';
+            Caption = 'EAI Endpoint';
         }
         field(3; "SubscriptionKey"; Text[250])
         {

@@ -1,7 +1,7 @@
-page 66001 "AIL Intent Selection"
+page 66001 "EAI Intent Selection"
 {
     PageType = List;
-    SourceTable = "AIL Intent Selection Temporary";
+    SourceTable = "EAI Intent Selection Temporary";
     SourceTableTemporary = true;
     InsertAllowed = false;
     ModifyAllowed = false;
@@ -32,19 +32,19 @@ page 66001 "AIL Intent Selection"
 
     trigger OnOpenPage()
     var
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
     begin
         BuildPage();
     end;
 
     local procedure BuildPage()
     var
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
         CurrOrdinal: Integer;
         Index: Integer;
     begin
-        foreach CurrOrdinal in Enum::"AIL Intent".Ordinals() do begin
-            Intent := Enum::"AIL Intent".FromInteger(CurrOrdinal);
+        foreach CurrOrdinal in Enum::"EAI Intent".Ordinals() do begin
+            Intent := Enum::"EAI Intent".FromInteger(CurrOrdinal);
             if Intent <> Intent::" " then begin
                 Index := Intent.Ordinals.IndexOf(CurrOrdinal);
                 Rec.Init();
@@ -57,7 +57,7 @@ page 66001 "AIL Intent Selection"
 
     procedure GetIntent(): Integer
     var
-        Intent: Enum "AIL Intent";
+        Intent: Enum "EAI Intent";
     begin
         exit(Rec."Intent ID");
     end;

@@ -1,9 +1,9 @@
-page 66150 "AIL Copilot CDW Proposal"
+page 66100 "EAI Copilot EDS Proposal"
 {
     PageType = PromptDialog;
     Extensible = false;
     IsPreview = true;
-    Caption = 'Suggest CDW changes with Copilot';
+    Caption = 'Suggest EDS with Copilot';
 
     // PromptMode = Content;
     // With PromptMode you can choose if the PromptDialog will open in:
@@ -33,6 +33,7 @@ page 66150 "AIL Copilot CDW Proposal"
             {
                 Editable = false;
                 ShowCaption = false;
+                ApplicationArea = All;
             }
             field(ChatRequest; ChatRequest)
             {
@@ -52,7 +53,7 @@ page 66150 "AIL Copilot CDW Proposal"
         // show the user the suggestion that your Copilot feature generated.
         area(Content)
         {
-            part(SubsProposalSub; "AIL Copilot CDW Proposal Sub")
+            part(SubsProposalSub; "EAI Copilot EDS Proposal Sub")
             {
                 ApplicationArea = All;
             }
@@ -69,7 +70,7 @@ page 66150 "AIL Copilot CDW Proposal"
             systemaction(Generate)
             {
                 Caption = 'Generate';
-                ToolTip = 'Generate CDW proposal with Dynamics 365 Copilot.';
+                ToolTip = 'Generate EDS proposal with Dynamics 365 Copilot.';
 
                 trigger OnAction()
                 begin
@@ -79,6 +80,7 @@ page 66150 "AIL Copilot CDW Proposal"
             systemaction(OK)
             {
                 Caption = 'Confirm';
+                Enabled = Intent = Intent::"EDSChange";
             }
             systemaction(Cancel)
             {
@@ -87,7 +89,7 @@ page 66150 "AIL Copilot CDW Proposal"
             systemaction(Regenerate)
             {
                 Caption = 'Regenerate';
-                ToolTip = 'Regenerate CDW proposal with Dynamics 365 Copilot.';
+                ToolTip = 'Regenerate EDS proposal with Dynamics 365 Copilot.';
                 trigger OnAction()
                 begin
                     RunGeneration();
@@ -100,14 +102,15 @@ page 66150 "AIL Copilot CDW Proposal"
     begin
         CurrPage.Caption := Text001Lbl;
         Title := Text002Lbl;
+        ChatRequest := 'Mostra gli ordini aperti del mese scorso';
     end;
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     begin
         if CloseAction = CloseAction::OK then begin
             case Intent of
-                Intent::cdwPrepare:
-                    CurrPage.SubsProposalSub.Page.ImportCDWLines();
+                Intent::edsChange:
+                    CurrPage.SubsProposalSub.Page.ChangeEDSStatus();
             end;
         end;
     end;
@@ -119,44 +122,50 @@ page 66150 "AIL Copilot CDW Proposal"
     begin
         if ChatRequest <> '' then
             CurrPage.Caption := Text001Lbl + ' - ' + ChatRequest;
-        GenCDWProposal.SetUserPrompt(ChatRequest);
-        GenCDWProposal.SetCDWKey(TableID);
+        GenEDSProposal.SetUserPrompt(ChatRequest);
+        GenEDSProposal.SetEDSKey(TableID, DocumentType);
 
-        TmpCDWAIProposal.Reset();
-        TmpCDWAIProposal.DeleteAll();
+        TmpEDSAIProposal.Reset();
+        TmpEDSAIProposal.DeleteAll();
 
         Attempts := 0;
-        while TmpCDWAIProposal.IsEmpty and (Attempts < 1) do begin
-            if GenCDWProposal.Run() then
-                GenCDWProposal.GetResult(TmpCDWAIProposal, Intent);
+        while TmpEDSAIProposal.IsEmpty and (Attempts < 1) do begin
+            if GenEDSProposal.Run() then
+                GenEDSProposal.GetResult(TmpEDSAIProposal, Intent);
             Attempts += 1;
         end;
 
         if (Attempts < 5) then begin
-            Load(TmpCDWAIProposal);
+            Load(TmpEDSAIProposal);
         end else
-            Error('Something went wrong. Please try again. ' + GetLastErrorText());
+            Error(Text003Err + GetLastErrorText());
     end;
 
-    procedure SetSource(var CDWJournalLine2: Record "EOS041 CDW Journal Line")
+    procedure SetEDSKey(TableID2: Integer)
     begin
-        CDWJournalLine.Copy(CDWJournalLine2);
+        SetEDSKey(TableID2, 0);
     end;
 
-    procedure Load(var TmpCDWProposal: Record "AIL Copilot CDW Proposal" temporary)
+    procedure SetEDSKey(TableID2: Integer; DocumentType2: Integer)
     begin
-        CurrPage.SubsProposalSub.Page.Load(TmpCDWProposal, Intent);
+        TableID := TableID2;
+        DocumentType := DocumentType2;
+    end;
+
+    procedure Load(var TmpEDSProposal: Record "EAI Copilot EDS Proposal" temporary)
+    begin
+        CurrPage.SubsProposalSub.Page.Load(TmpEDSProposal, Intent);
         CurrPage.Update(false);
     end;
 
     var
-        TmpCDWAIProposal: Record "AIL Copilot CDW Proposal" temporary;
-        CDWJournalLine: Record "EOS041 CDW Journal Line";
-        GenCDWProposal: Codeunit "AIL Generate CDW Proposal";
         TableID: Integer;
-        Intent: Enum "AIL Intent";
-        Text001Lbl: Label 'Suggest CDW changes with Copilot';
-        Text002Lbl: Label 'Request documents to close without invoicing. Example: Close all shipments of customer Spotsmeyer''s Furnishings';
+        DocumentType: Integer;
+        Intent: Enum "EAI Intent";
+        TmpEDSAIProposal: Record "EAI Copilot EDS Proposal" temporary;
+        GenEDSProposal: Codeunit "EAI Generate EDS Proposal";
+        Text001Lbl: Label 'Suggest EDS changes with Copilot';
+        Text002Lbl: Label 'Request table to inspect or propose change status. Example: Close all open sales orders not modified since 3 days';
         Text003Err: Label 'Something went wrong. Please try again. ';
         ChatRequest: Text;
         Title: Text;

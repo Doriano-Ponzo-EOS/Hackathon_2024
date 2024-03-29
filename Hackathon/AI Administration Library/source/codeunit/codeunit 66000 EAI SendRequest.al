@@ -1,7 +1,7 @@
-codeunit 66000 "AIL SendRequest"
+codeunit 66000 "EAI SendRequest"
 {
 
-    procedure SendLSRequest(Question: Text; var TopIntent: Enum "AIL Intent"; var tmp_entities: Record "AIL Entities"; ProjectName: Text)
+    procedure SendLSRequest(Question: Text; var TopIntent: Enum "EAI Intent"; var tmp_entities: Record "EAI Entities"; ProjectName: Text)
     var
         jsonData: Text;
         RequestMessage: HttpRequestMessage;
@@ -16,20 +16,20 @@ codeunit 66000 "AIL SendRequest"
 
     local procedure GetRequestBody(Question: Text; ProjectName: Text) requestBody: Text
     var
-        AILSetup: Record "AIL Library Setup";
-        JsonDataSrc: Label '{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}';
+        EAISetup: Record "EAI Library Setup";
+        JsonDataSrc: Label '{"kind":"Conversation","analysisInput":{"conversationItem":{"id":"{{userID}}","text":"{{RequestText}}","modality":"text","language":"it","participantId":"{{userID}}"}},"parameters":{"projectName":"{{ProjectName}}","verbose":true,"deploymentName":"{{Deployment}}","stringIndexType":"TextElement_V8"}}', Locked = true;
     begin
-        AILSetup.Get();
+        EAISetup.Get();
         requestBody := JsonDataSrc;
         requestBody := requestBody.Replace('{{userID}}', UserId);
         requestBody := requestBody.Replace('{{RequestText}}', Question);
         requestBody := requestBody.Replace('{{ProjectName}}', ProjectName);
-        requestBody := requestBody.Replace('{{Deployment}}', AILSetup."Deployment Name");
+        requestBody := requestBody.Replace('{{Deployment}}', EAISetup."Deployment Name");
     end;
 
     local procedure GetRequestMessage(var RequestMessage: HttpRequestMessage; JsonData: Text)
     var
-        AILSetup: Record "AIL Library Setup";
+        EAISetup: Record "EAI Library Setup";
         Base64Convert: Codeunit "Base64 Convert";
         Content: HttpContent;
         ContentHeaders: HttpHeaders;
@@ -40,14 +40,14 @@ codeunit 66000 "AIL SendRequest"
         UserPasswordLbl: Label '%1:%2', Locked = true;
     begin
         Clear(RequestMessage);
-        AILSetup.Get();
+        EAISetup.Get();
 
 
         RequestHeader.Clear();
         RequestMessage.GetHeaders(RequestHeader);
-        RequestHeader.Add('Ocp-Apim-Subscription-Key', AILSetup.SubscriptionKey);
+        RequestHeader.Add('Ocp-Apim-Subscription-Key', EAISetup.SubscriptionKey);
 
-        RequestMessage.SetRequestUri(StrSubstNo(URILbl, AILSetup."AIL Endpoint", AILSetup."API Version"));
+        RequestMessage.SetRequestUri(StrSubstNo(URILbl, EAISetup."EAI Endpoint", EAISetup."API Version"));
         RequestMessage.Method('POST');
 
         Content.WriteFrom(JsonData);
@@ -80,7 +80,7 @@ codeunit 66000 "AIL SendRequest"
             Error(ResponseMessage.ReasonPhrase());
     end;
 
-    local procedure ParseResponseText(ResponseTxt: Text; var TopIntent: Enum "AIL Intent"; var tmp_entities: Record "AIL Entities")
+    local procedure ParseResponseText(ResponseTxt: Text; var TopIntent: Enum "EAI Intent"; var tmp_entities: Record "EAI Entities")
     var
         JObj: JsonObject;
         JTok: JsonToken;
@@ -103,9 +103,9 @@ codeunit 66000 "AIL SendRequest"
         JObj.SelectToken('$.result.prediction.entities', JEntities);
 
         TopIntentTxt := JTopIntent.AsValue().AsText();
-        Index := "AIL Intent".Names.IndexOf(TopIntentTxt);
-        OrdinalValue := "AIL Intent".Ordinals.Get(Index);
-        TopIntent := Enum::"AIL Intent".FromInteger(OrdinalValue);
+        Index := "EAI Intent".Names.IndexOf(TopIntentTxt);
+        OrdinalValue := "EAI Intent".Ordinals.Get(Index);
+        TopIntent := Enum::"EAI Intent".FromInteger(OrdinalValue);
 
         JArray := JEntities.AsArray();
         i := 0;
